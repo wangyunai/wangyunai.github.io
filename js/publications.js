@@ -38,5 +38,57 @@ const labPublications = {
             doi: "https://doi.org/10.1002/hbm.26582",
             pdf: null
         }
+    ],
+    "2023": [
+        {
+            title: "Differences in White Matter Structural Networks in Family Risk of Major Depressive Disorder and Suicidality: A Connectome Analysis",
+            authors: "Kelsall, NC., Wang, Y., Gameroff, MJ., Cha, J., Posner, J., Talati, A., ...",
+            journal: "medRxiv",
+            pages: "2023.09.07.23295211",
+            doi: null,
+            pdf: null
+        }
+    ],
+    "2022": [
+        {
+            title: "PTNet3D: A 3D high-resolution longitudinal infant brain MRI synthesizer based on transformers",
+            authors: "Zhang, X., He, X., Guo, J., Ettehadi, N., Aw, N., Semanek, D., Posner, J., Laine, A., Wang, Y., ...",
+            journal: "IEEE Transactions on Medical Imaging",
+            pages: "41 (10), 2925-2940",
+            doi: null,
+            pdf: null
+        },
+        {
+            title: "ID-Seg: an infant deep learning-based segmentation framework to improve limbic structure estimates",
+            authors: "Wang, Y., Kessel, E., Lee, S., Hong, S., Raffanello, E., Hulvershorn, LA., ...",
+            journal: "Journal of Child Psychology and Psychiatry",
+            pages: "63 (11), 1381-1391",
+            doi: null,
+            pdf: null
+        },
+        {
+            title: "Noninvasive characterization of functional pathways in layer-specific microcircuits of the human brain using 7T fMRI",
+            authors: "Deshpande, G., Wang, Y.",
+            journal: "Brain Sciences",
+            pages: "12 (10), 1361",
+            doi: null,
+            pdf: null
+        },
+        {
+            title: "Automated Multiclass Artifact Detection in Diffusion MRI Volumes via 3D Residual Squeeze-and-Excitation Convolutional Neural Networks",
+            authors: "Ettehadi, N., Kashyap, P., Zhang, X., Wang, Y., Semanek, D., Desai, K., Guo, J., ...",
+            journal: "Frontiers in Human Neuroscience",
+            pages: "16, 877326",
+            doi: null,
+            pdf: null
+        },
+        {
+            title: "Organization of the social cognition network predicts future depression and interpersonal impairment: a prospective family-based study",
+            authors: "Abraham, E., Wang, Y., Svob, C., Semanek, D., Gameroff, MJ., Shankman, SA., ...",
+            journal: "Neuropsychopharmacology",
+            pages: "47 (2), 531-542",
+            doi: null,
+            pdf: null
+        }
     ]
 }; 
