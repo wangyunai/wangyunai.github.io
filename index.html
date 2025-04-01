@@ -21,7 +21,9 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
                 <li><a href="#research">Research</a></li>
+                <li><a href="#innovations">Innovations</a></li>
                 <li><a href="#funding">Funding</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#publications">Publications</a></li>
@@ -69,6 +71,21 @@
         </div>
     </section>
 
+    <section id="news">
+        <div class="section-header">
+            <h2>Lab News</h2>
+            <div class="section-subtitle">Latest updates and achievements from NEXMII Lab</div>
+        </div>
+        <div class="publication-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="2025">2025</button>
+            <button class="filter-btn" data-filter="2024">2024</button>
+        </div>
+        <div class="news-container headline-style">
+            <!-- News items will be loaded from news.js -->
+        </div>
+    </section>
+
     <section id="research">
         <div class="research-pattern"></div>
         <h2>Research Areas</h2>
@@ -97,7 +114,17 @@
             </div>
         </div>
     </section>
-    
+
+    <section id="innovations">
+        <div class="section-header">
+            <h2>Innovations & Technologies</h2>
+            <div class="section-subtitle">Cutting-edge tools and frameworks developed by our lab</div>
+        </div>
+        <div class="innovations-grid">
+            <!-- Innovations will be loaded from innovations.js -->
+        </div>
+    </section>
+
     <section id="funding" class="funding-section">
         <div class="section-header">
             <h2>Research Funding</h2>
@@ -239,73 +266,46 @@
         <div class="publications-container">
             <div class="publication-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="2025">2025</button>
                 <button class="filter-btn" data-filter="2024">2024</button>
-                <button class="filter-btn" data-filter="2023">2023</button>
-                <button class="filter-btn" data-filter="2022">2022</button>
             </div>
             <div class="publications-grid">
                 <div class="publication-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3>Prediction of mental health risk in adolescents</h3>
+                        <p class="authors">Hill, ED., Kashyap, P., Raffanello, E., Wang, Y., Moffitt, TE., Caspi, A., ...</p>
+                        <p class="journal">Nature Medicine</p>
+                        <p class="pages">1-7</p>
+                    </div>
+                </div>
+
+                <div class="publication-item">
                     <div class="pub-year">2024</div>
                     <div class="pub-content">
-                        <h3>Advancing Fetal Neuroimaging: Deep Learning Approaches for Automated Brain Structure Segmentation</h3>
-                        <p class="authors">Wang, Y., Liu, R., Zhang, X., Zhong, X., & Zhu, Y.</p>
-                        <p class="journal">Journal of Medical Imaging</p>
-                        <div class="pub-links">
-                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-                        </div>
+                        <h3>Reduced dorsal fronto-striatal connectivity at rest in anorexia nervosa</h3>
+                        <p class="authors">Muratore, AF., Foerde, K., Lloyd, EC., Touzeau, C., Uniacke, B., Aw, N., Wang, Y., ...</p>
+                        <p class="journal">Psychological Medicine</p>
+                        <p class="pages">54 (9), 2200-2209</p>
                     </div>
                 </div>
-                
+
                 <div class="publication-item">
-                    <div class="pub-year">2023</div>
+                    <div class="pub-year">2024</div>
                     <div class="pub-content">
-                        <h3>Multimodal Integration of EHR and Neuroimaging Data for Predicting Neurodevelopmental Outcomes</h3>
-                        <p class="authors">Liu, R., Wang, Y., Marchuck, N., & Zhang, X.</p>
-                        <p class="journal">Journal of Biomedical Informatics</p>
-                        <div class="pub-links">
-                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-                        </div>
+                        <h3>Segmenting hypothalamic subunits in human newborn magnetic resonance imaging data</h3>
+                        <p class="authors">Rasmussen, JM., Wang, Y., Graham, AM., Fair, DA., Posner, J., O'Connor, TG., ...</p>
+                        <p class="journal">Human Brain Mapping</p>
+                        <p class="pages">45 (2), e26582</p>
                     </div>
                 </div>
-                
+
                 <div class="publication-item">
-                    <div class="pub-year">2023</div>
+                    <div class="pub-year">2024</div>
                     <div class="pub-content">
-                        <h3>Machine Learning Approaches for Early Detection of Maternal Depression: Implications for Infant Development</h3>
-                        <p class="authors">Zhong, X., Wang, Y., & Zhu, Y.</p>
-                        <p class="journal">JMIR Mental Health</p>
-                        <div class="pub-links">
-                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="publication-item">
-                    <div class="pub-year">2022</div>
-                    <div class="pub-content">
-                        <h3>Digital Biomarkers for Maternal Health: A Systematic Review</h3>
-                        <p class="authors">Wang, Y., Zhang, X., & Marchuck, N.</p>
-                        <p class="journal">NPJ Digital Medicine</p>
-                        <div class="pub-links">
-                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="publication-item">
-                    <div class="pub-year">2022</div>
-                    <div class="pub-content">
-                        <h3>Synthetic Data Generation for Enhancing Fetal Brain MRI Analysis</h3>
-                        <p class="authors">Zhu, Y., Wang, Y., & Liu, R.</p>
-                        <p class="journal">IEEE Transactions on Medical Imaging</p>
-                        <div class="pub-links">
-                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-                        </div>
+                        <h3>MAPSeg: Unified unsupervised domain adaptation for heterogeneous medical image segmentation based on 3D masked autoencoding and pseudo-labeling</h3>
+                        <p class="authors">Zhang, X., Wu, Y., Angelini, E., Li, A., Guo, J., Rasmussen, JM., O'Connor, TG., Wang, Y., ...</p>
+                        <p class="journal">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</p>
                     </div>
                 </div>
             </div>
@@ -323,7 +323,7 @@
                     <i class="fas fa-envelope"></i>
                     <div class="contact-text">
                         <h3>Email</h3>
-                        <p>yun.wang@emory.edu</p>
+                        <p>yun.wang2@emory.edu</p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -333,18 +333,10 @@
                         <p>Department of Biomedical Informatics<br>Emory University School of Medicine<br>Atlanta, GA 30322</p>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div class="contact-text">
-                        <h3>Phone</h3>
-                        <p>(404) 555-1234</p>
-                    </div>
-                </div>
             </div>
             <div class="social-links">
-                <a href="https://twitter.com/nexmiilab" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/nexmiilab" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/nexmiilab" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/wangyunai" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yun-wang-8308713b/" class="social-link"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </section>
@@ -355,6 +347,12 @@
             <p>&copy; 2024 Next Generation Maternal Infant Informatics Laboratory. All rights reserved.</p>
         </div>
     </footer>
+    <script src="js/research.js"></script>
+    <script src="js/funding.js"></script>
+    <script src="js/team.js"></script>
+    <script src="js/publications.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/innovations.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
