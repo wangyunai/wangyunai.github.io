@@ -86,6 +86,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Track page scroll depth
     trackScrollDepth();
+    
+    // Setup navigation active state
+    handleScrollNavigation();
 });
 
 // Track scroll depth
@@ -105,6 +108,34 @@ function trackScrollDepth() {
                 if (typeof trackClick === 'function') {
                     trackClick('Engagement', 'Scroll Depth', `${mark.percent}%`);
                 }
+            }
+        });
+    });
+}
+
+// Add active class to navigation when scrolling
+function handleScrollNavigation() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav ul li a');
+    
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const scrollPosition = window.scrollY + 300; // Offset to trigger active state earlier
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            const href = link.getAttribute('href');
+            if (href === `#${current}`) {
+                link.classList.add('active');
             }
         });
     });
@@ -641,31 +672,4 @@ function simplifyNews() {
             }
         });
     }
-}
-
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
-    const menuIcon = document.querySelector('.mobile-menu-icon');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    if (menuIcon) {
-        menuIcon.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-        });
-    }
-    
-    // Load content from data files
-    loadNews();
-    loadResearch();
-    loadFunding();
-    loadTeam();
-    loadPublications();
-    loadInnovations();
-    
-    // Apply simplified news styling
-    simplifyNews();
-    
-    // Setup filters
-    setupNewsFilters();
-}); 
+} 
