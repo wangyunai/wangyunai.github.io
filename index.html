@@ -380,14 +380,33 @@
         <div class="contact-container">
             <div class="contact-form-container">
                 <h3>Interested in joining or collaborating?</h3>
-                <p class="form-subtitle">Please email us directly at:</p>
+                <p class="form-subtitle">Please leave us a message using the form below or email us directly at <a href="mailto:yun.wang2@emory.edu" class="email-link">yun.wang2@emory.edu</a>.</p>
                 
-                <div class="contact-direct">
-                    <a href="mailto:yun.wang2@emory.edu" class="email-link" onclick="trackClick('Contact', 'Email', 'Direct Email')">
-                        <i class="fas fa-envelope"></i> yun.wang2@emory.edu
-                    </a>
-                    <p class="contact-note">We welcome inquiries about research collaborations, joining the lab, or any questions about our work.</p>
-                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" selected>Select an option</option>
+                            <option value="research">Research Collaboration</option>
+                            <option value="join">Joining the Lab</option>
+                            <option value="student">Student Opportunity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
             
             <div class="social-links">

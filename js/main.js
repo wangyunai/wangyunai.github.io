@@ -92,6 +92,43 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Setup navigation active state
     handleScrollNavigation();
+
+    // Contact form handling
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Track the form submission attempt
+            if (typeof trackClick === 'function') {
+                trackClick('Contact', 'Form Submission', 'Attempt');
+            }
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Validation (simple)
+            if (!name || !email || !subject || !message) {
+                alert('Please fill out all fields.');
+                return;
+            }
+            
+            // For now, just provide feedback and direct them to email
+            // Since there's no backend processing
+            alert('Thank you for your message. To ensure delivery, please also send your inquiry directly to: yun.wang2@emory.edu');
+            
+            // Clear the form
+            contactForm.reset();
+            
+            // Track successful submission
+            if (typeof trackClick === 'function') {
+                trackClick('Contact', 'Form Submission', 'Success');
+            }
+        });
+    }
 });
 
 // Track scroll depth
