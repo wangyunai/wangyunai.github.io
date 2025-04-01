@@ -152,25 +152,38 @@ function hidePreloader() {
     // First ensure the progress bar shows 100%
     updatePreloaderProgress(100);
     
-    // After a small delay, hide the preloader
+    // Reduce delay to make content visible faster
     setTimeout(() => {
         preloader.classList.add('loaded');
+        
+        // Make body content visible immediately
+        document.body.style.visibility = 'visible';
         
         // Remove preloader from DOM after animation completes
         setTimeout(() => {
             preloader.style.display = 'none';
-        }, 500);
-    }, 500);
+        }, 300); // Reduced from 500ms
+    }, 200); // Reduced from 500ms
 }
 
 /**
  * Setup lazy loading for images
  */
 function setupLazyLoading() {
+    // Don't lazy load logo and domain icons - critical for initial view
+    const criticalImages = [
+        'images/nexmii_logo.png',
+        'images/yun_wang.png'
+    ];
+    
     // Mark all images to be lazy loaded except for critical ones
-    const allImages = document.querySelectorAll('img:not([src="images/nexmii_logo.png"])');
+    const allImages = document.querySelectorAll('img');
     allImages.forEach(img => {
-        if (!img.classList.contains('loader-logo')) {
+        const src = img.src || '';
+        const isCritical = criticalImages.some(criticalSrc => src.includes(criticalSrc)) || 
+                          img.classList.contains('loader-logo');
+        
+        if (!isCritical) {
             // Save the original src
             const originalSrc = img.src;
             

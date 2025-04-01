@@ -53,6 +53,111 @@ nav {
     font-weight: bold;
     color: #000;
 }
+
+/* Critical navigation styles */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Hero section and research domains */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding-top: 70px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.hero h2.lab-full-name {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.8;
+}
+
+.research-domains {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.domain-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+}
+
+.domain-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #3c5a99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.domain-icon i {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.domain-item span {
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+}
+
+/* Make sure sections are visible */
+section {
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
 `;
 
 // List of non-critical stylesheets to load after page load
