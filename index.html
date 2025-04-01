@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXMII Lab - Maternal and Infant Health Research</title>
+    
+    <!-- Preloader CSS - Load this first for faster perceived loading -->
+    <link rel="stylesheet" href="css/preloader.css">
+    
+    <!-- Preconnect to external domains to improve loading speed -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
@@ -21,12 +29,37 @@
             console.log(`Analytics event: ${category} - ${action} - ${label}`); // Debug logging
         }
     </script>
+    
+    <!-- Performance optimization script - Load early -->
+    <script src="js/performance.js"></script>
+    
+    <!-- CSS Loader for optimized CSS delivery -->
+    <script src="js/css-loader.js"></script>
+    
+    <!-- Main stylesheets - Will be loaded by performance script -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/academic.css">
     <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle loader-circle-1"></div>
+            <div class="loader-circle loader-circle-2"></div>
+            <div class="loader-circle loader-circle-3"></div>
+            <div class="loader-text">
+                <img src="images/nexmii_logo.png" alt="NEXMII Lab Logo" class="loader-logo">
+                <span>NEXMII</span>
+            </div>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-progress-bar"></div>
+        </div>
+        <div class="loading-text">Loading resources...</div>
+    </div>
+
     <header>
         <nav>
             <div class="logo">
@@ -403,6 +436,8 @@
             <a href="#" id="admin-login" style="opacity: 0.1; font-size: 10px; color: #888; margin-top: 20px; display: inline-block;" onclick="adminLogin(); return false;">Admin</a>
         </div>
     </footer>
+    
+    <!-- Scripts - Ordered for optimal loading -->
     <script src="js/research.js"></script>
     <script src="js/funding.js"></script>
     <script src="js/team.js"></script>
@@ -411,6 +446,7 @@
     <script src="js/innovations.js"></script>
     <script src="js/main.js"></script>
     <script src="js/reminder.js"></script>
+    <script src="js/image-optimizer.js"></script>
     <!-- Analytics setup guide in js/readme_analytics.js -->
     <script>
         function adminLogin() {
