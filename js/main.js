@@ -13,6 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const filter = this.getAttribute('data-filter');
             
+            // Track filter usage
+            if (typeof trackClick === 'function') {
+                const section = this.closest('section').id;
+                trackClick('Filters', 'Filter Applied', `${section} - ${filter}`);
+            }
+            
             // Show/hide publications based on filter
             publicationItems.forEach(item => {
                 if (filter === 'all') {
@@ -55,6 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileMenuIcon.addEventListener('click', function() {
         navMenu.classList.toggle('active');
         
+        // Track mobile menu toggle
+        if (typeof trackClick === 'function') {
+            const action = navMenu.classList.contains('active') ? 'Open' : 'Close';
+            trackClick('Navigation', 'Mobile Menu', action);
+        }
+        
         // Toggle between hamburger and X icon
         const icon = this.querySelector('i');
         if (icon.classList.contains('fa-bars')) {
@@ -71,7 +83,32 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Setup news filters
     setupNewsFilters();
+    
+    // Track page scroll depth
+    trackScrollDepth();
 });
+
+// Track scroll depth
+function trackScrollDepth() {
+    let scrollMarks = [25, 50, 75, 100];
+    let marks = scrollMarks.map(mark => ({
+        percent: mark,
+        tracked: false
+    }));
+    
+    window.addEventListener('scroll', function() {
+        const scrollPercent = (window.scrollY / (document.body.offsetHeight - window.innerHeight)) * 100;
+        
+        marks.forEach(mark => {
+            if (scrollPercent >= mark.percent && !mark.tracked) {
+                mark.tracked = true;
+                if (typeof trackClick === 'function') {
+                    trackClick('Engagement', 'Scroll Depth', `${mark.percent}%`);
+                }
+            }
+        });
+    });
+}
 
 // Load news items from news.js
 function loadNews() {
@@ -126,6 +163,12 @@ function setupNewsFilters() {
                 this.classList.add('active');
                 
                 const filter = this.getAttribute('data-filter');
+                
+                // Track filter usage
+                if (typeof trackClick === 'function') {
+                    trackClick('Filters', 'News Filter', filter);
+                }
+                
                 const newsContainer = document.querySelector('.news-container');
                 
                 // Clear existing content
