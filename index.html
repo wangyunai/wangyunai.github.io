@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXMII Lab - Maternal and Infant Health Research</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/academic.css">
     <link rel="stylesheet" href="css/team.css">
@@ -383,6 +391,7 @@
         <div class="footer-content">
             <div class="footer-logo">NEXMII LAB</div>
             <p>&copy; 2024 Next Generation Maternal Infant Informatics Laboratory. All rights reserved.</p>
+            <a href="#" id="admin-login" style="opacity: 0.1; font-size: 10px; color: #888; margin-top: 20px; display: inline-block;" onclick="adminLogin(); return false;">Admin</a>
         </div>
     </footer>
     <script src="js/research.js"></script>
@@ -392,5 +401,15 @@
     <script src="js/news.js"></script>
     <script src="js/innovations.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/reminder.js"></script>
+    <script>
+        function adminLogin() {
+            const password = prompt("Enter admin password:");
+            if (password === "nexmii2024") { // Change this to your desired password
+                localStorage.setItem('isNexmiiAdmin', 'true');
+                alert("Admin mode activated. You will now receive monthly update reminders on the last Sunday of each month.");
+            }
+        }
+    </script>
 </body>
 </html>
