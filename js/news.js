@@ -26,7 +26,12 @@ const labNews = [
         content: "NEXMII Lab secures R00 from NICHD and R01 from NIMH totaling over $3M to advance AI tools for infant brain development and investigate prenatal obesity impacts on neurodevelopment.",
         tags: ["Funding", "Grants"]
     },
-    
+    {
+        date: "February 2024",
+        title: "NEXMII Lab Opens Its Doors",
+        content: "February 18, 2024 marks the official launch of the NEXMII Lab at Emory University, beginning our journey to advance maternal and infant health through innovative informatics solutions.",
+        tags: ["Milestone", "Lab News"]
+    },
     {
         date: "June 2024", 
         title: "New Publication in IEEE/CVF Conference on Computer Vision",
@@ -38,12 +43,7 @@ const labNews = [
         title: "Research Specialist Joins NEXMII Team",
         content: "Noah Marchuck joins as Research Specialist, enhancing our team with expertise in research coordination and project management.",
         tags: ["Team", "Growth"]
-    },{
-        date: "February 2024",
-        title: "NEXMII Lab Opens Its Doors",
-        content: "February 18, 2024 marks the official launch of the NEXMII Lab at Emory University, beginning our journey to advance maternal and infant health through innovative informatics solutions.",
-        tags: ["Milestone", "Lab News"]
-    },
+    }
 ];
 
 // Optionally filter news by year or tag
