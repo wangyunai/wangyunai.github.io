@@ -84,6 +84,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Setup news filters
     setupNewsFilters();
     
+    // Load publications
+    loadPublications();
+    
     // Load innovations
     loadInnovations();
     
