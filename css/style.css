@@ -33,19 +33,37 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .logo img {
-    height: 65px;
+    height: 80px;
     width: auto;
     margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .logo span {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #000;
+    color: #012169; /* Emory blue */
+    line-height: 1.1;
+}
+
+.logo .affiliation {
+    font-size: 0.85rem;
+    color: #5f6a72;
+    margin-top: 0.25rem;
+    font-weight: 500;
 }
 
 .hero-logo {
@@ -84,13 +102,13 @@ nav ul li a::after {
     left: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, #3498db, #2980b9);
+    background: linear-gradient(90deg, var(--emory-blue), var(--emory-light-blue));
     transition: width 0.3s ease;
     border-radius: 3px;
 }
 
 nav ul li a:hover {
-    color: #3498db;
+    color: var(--emory-blue);
 }
 
 nav ul li a:hover::after {
@@ -99,7 +117,7 @@ nav ul li a:hover::after {
 
 /* Active navigation state */
 nav ul li a.active {
-    color: #3498db;
+    color: var(--emory-blue);
     font-weight: 600;
 }
 
@@ -132,7 +150,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(52, 152, 219, 0.05) 0%, rgba(41, 128, 185, 0.1) 100%);
+    background: linear-gradient(45deg, rgba(1, 33, 105, 0.05) 0%, rgba(1, 33, 105, 0.1) 100%);
     z-index: 0;
 }
 
@@ -210,15 +228,15 @@ section {
 }
 
 .domain-item:nth-child(1) .domain-icon {
-    background: linear-gradient(135deg, #2980b9, #3498db);
+    background: linear-gradient(135deg, var(--emory-dark-blue), var(--emory-blue));
 }
 
 .domain-item:nth-child(2) .domain-icon {
-    background: linear-gradient(135deg, #16a085, #2ecc71);
+    background: linear-gradient(135deg, var(--emory-blue), var(--emory-light-blue));
 }
 
 .domain-item:nth-child(3) .domain-icon {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    background: linear-gradient(135deg, var(--emory-gold), #f5c143);
 }
 
 .domain-item:nth-child(4) .domain-icon {
@@ -419,7 +437,7 @@ h2 {
     transform: translateX(-50%);
     width: 40px;
     height: 3px;
-    background: linear-gradient(90deg, #2c3e50, #3498db);
+    background: linear-gradient(90deg, var(--emory-blue), var(--emory-gold));
     border-radius: 2px;
 }
 
@@ -662,7 +680,7 @@ h2 {
 footer {
     text-align: center;
     padding: 3rem 2rem;
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, var(--emory-dark-blue) 0%, var(--emory-blue) 100%);
     color: #fff;
 }
 
@@ -1042,7 +1060,7 @@ footer {
 
 .submit-btn {
     grid-column: span 2;
-    background: linear-gradient(135deg, #2980b9, #3498db);
+    background: linear-gradient(135deg, var(--emory-dark-blue), var(--emory-blue));
     color: white;
     border: none;
     padding: 1rem;
@@ -1052,13 +1070,13 @@ footer {
     transition: all 0.3s ease;
     font-weight: 500;
     letter-spacing: 0.5px;
-    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 2px 8px rgba(1, 33, 105, 0.3);
 }
 
 .submit-btn:hover {
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, var(--emory-blue), var(--emory-dark-blue));
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+    box-shadow: 0 4px 12px rgba(1, 33, 105, 0.4);
 }
 
 .social-links {
@@ -1191,7 +1209,7 @@ footer {
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-    border-left: 5px solid #3498db;
+    border-left: 5px solid var(--emory-blue);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1245,10 +1263,18 @@ footer {
     display: flex;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 5px solid #3498db;
+    border-left: 5px solid var(--emory-blue);
 }
 
 .publication-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Emory University Colors */
+:root {
+    --emory-blue: #012169;
+    --emory-gold: #f2a900;
+    --emory-light-blue: #5c8dc0;
+    --emory-dark-blue: #001a57;
 }
