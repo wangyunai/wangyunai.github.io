@@ -840,10 +840,10 @@ footer {
 
 /* Contact Form Styles */
 .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
     margin: 3rem auto 0;
     background-color: #fff;
     border-radius: 15px;
@@ -852,44 +852,8 @@ footer {
     padding: 3rem;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-}
-
-.contact-item i {
-    font-size: 1.5rem;
-    color: #3498db;
-    background-color: #f0f7fc;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.contact-text h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.3rem;
-    color: #2c3e50;
-}
-
-.contact-text p {
-    margin: 0;
-    color: #4a5568;
-    line-height: 1.6;
-}
-
 .contact-form-container {
-    grid-column: span 2;
+    width: 100%;
     background-color: #f8f9fa;
     padding: 2rem;
     border-radius: 12px;
@@ -900,11 +864,13 @@ footer {
     color: #2c3e50;
     margin: 0 0 0.5rem 0;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .form-subtitle {
     color: #4a5568;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 #contact-form {
