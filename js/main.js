@@ -115,7 +115,7 @@ function loadNews() {
 
 // Filter news by year when clicking year buttons
 function setupNewsFilters() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
+    const filterButtons = document.querySelectorAll('.news-filters .filter-btn');
     if (filterButtons.length > 0) {
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
