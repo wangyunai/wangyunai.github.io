@@ -72,10 +72,20 @@ nav {
 }
 
 .hero-logo img {
-    height: 180px;
+    height: 250px;
     width: auto;
     margin-bottom: 1.5rem;
     filter: brightness(1.02);
+    animation: gentle-bounce 6s ease-in-out infinite;
+}
+
+@keyframes gentle-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 nav ul {
