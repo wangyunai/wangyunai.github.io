@@ -1,10 +1,15 @@
 :root {
-  --paper: #ffffff;
-  --ink: #2d3338;
-  --muted: #60686e;
-  --light: #8a9297;
-  --link: #012169;
-  --line: #e2e5e7;
+  --paper: #fffefa;
+  --ink: #293438;
+  --muted: #5c686b;
+  --light: #879293;
+  --link: #185778;
+  --line: #dfe6e3;
+  --sea: #2f7085;
+  --jade: #6a9f92;
+  --coral: #d87861;
+  --sun: #d4a63f;
+  --sand: #fbf6ec;
   --frame: min(1060px, calc(100vw - 56px));
 }
 
@@ -31,15 +36,17 @@ body {
 a {
   color: var(--link);
   text-decoration: none;
+  transition: color 180ms ease;
 }
 
 a:hover {
+  color: var(--coral);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 ::selection {
-  background: #e8edf7;
+  background: #dceeea;
   color: var(--ink);
 }
 
@@ -70,8 +77,27 @@ a:hover {
 }
 
 .site-header {
+  position: relative;
   border-bottom: 1px solid var(--line);
-  background: var(--paper);
+  background: rgb(255 254 250 / 94%);
+}
+
+.site-header::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--sea) 0 16%,
+    var(--jade) 16% 32%,
+    transparent 32% 68%,
+    var(--sun) 68% 84%,
+    var(--coral) 84% 100%
+  );
+  content: "";
+  opacity: 0.42;
 }
 
 .header-inner {
@@ -83,6 +109,7 @@ a:hover {
 }
 
 .brand {
+  position: relative;
   flex: 0 0 auto;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -90,8 +117,20 @@ a:hover {
   font-weight: 600;
 }
 
+.brand::before {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 9px 2px 0;
+  border-radius: 58% 42% 52% 48%;
+  background: var(--coral);
+  box-shadow: 5px -4px 0 -2px var(--sun);
+  content: "";
+  transform: rotate(18deg);
+}
+
 .brand:hover {
-  color: var(--link);
+  color: var(--sea);
   text-decoration: none;
 }
 
@@ -102,8 +141,39 @@ a:hover {
 }
 
 .primary-navigation a {
+  position: relative;
   color: #4e575d;
   font-size: 13px;
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.primary-navigation a::after {
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  left: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--coral);
+  content: "";
+  opacity: 0;
+  transform: scaleX(0.35);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.primary-navigation a:hover {
+  color: var(--sea);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.primary-navigation a:hover::after {
+  opacity: 0.75;
+  transform: scaleX(1);
 }
 
 .academic-shell {
@@ -123,11 +193,23 @@ a:hover {
 
 .profile-sidebar h2 {
   margin: 0;
-  color: var(--ink);
+  color: var(--sea);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 25px;
   font-weight: 400;
   line-height: 1.25;
+}
+
+.profile-sidebar h2::after {
+  display: block;
+  width: 42px;
+  height: 4px;
+  margin-top: 12px;
+  border-radius: 72% 28% 64% 36%;
+  background: var(--coral);
+  content: "";
+  opacity: 0.76;
+  transform: rotate(-1deg);
 }
 
 .sidebar-long-name {
@@ -179,8 +261,27 @@ a:hover {
 }
 
 .hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  overflow: clip;
   padding: 2px 0 54px;
   border-bottom: 1px solid var(--line);
+}
+
+.hero::before {
+  position: absolute;
+  z-index: -1;
+  top: -52px;
+  right: -58px;
+  bottom: -28px;
+  left: -36px;
+  background: url("../images/watercolor-wash.webp") center / cover no-repeat;
+  content: "";
+  opacity: 0.19;
+  pointer-events: none;
+  transform-origin: 52% 48%;
+  animation: watercolor-drift 18s ease-in-out infinite alternate;
 }
 
 .hero h1,
@@ -194,8 +295,21 @@ a:hover {
 }
 
 .hero h1 {
+  position: relative;
   font-size: clamp(34px, 4.2vw, 43px);
   line-height: 1.2;
+}
+
+.hero h1::after {
+  display: block;
+  width: 74px;
+  height: 6px;
+  margin-top: 15px;
+  border-radius: 72% 28% 66% 34%;
+  background: var(--coral);
+  content: "";
+  opacity: 0.72;
+  transform: rotate(-1.5deg);
 }
 
 .hero-summary,
@@ -228,8 +342,35 @@ a:hover {
 }
 
 .section-heading h2 {
+  position: relative;
+  padding-left: 18px;
   font-size: 30px;
   line-height: 1.25;
+}
+
+.section-heading h2::before {
+  position: absolute;
+  top: 0.55em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 63% 37% 54% 46%;
+  background: var(--jade);
+  content: "";
+  transform: translateY(-50%) rotate(24deg);
+}
+
+#research .section-heading h2::before,
+#news .section-heading h2::before {
+  background: var(--coral);
+}
+
+#methods .section-heading h2::before {
+  background: var(--sea);
+}
+
+#publications .section-heading h2::before {
+  background: var(--sun);
 }
 
 .section-heading > p {
@@ -269,6 +410,11 @@ a:hover {
 .research-item h3 {
   font-size: 21px;
   line-height: 1.35;
+  transition: color 180ms ease;
+}
+
+.research-item:hover h3 {
+  color: var(--sea);
 }
 
 .research-item p {
@@ -327,7 +473,7 @@ a:hover {
 }
 
 .funding-code strong {
-  color: var(--ink);
+  color: var(--sea);
 }
 
 .funding-item > p {
@@ -389,7 +535,7 @@ a:hover {
 }
 
 .publication-item > span {
-  color: var(--muted);
+  color: var(--coral);
   font-size: 12px;
 }
 
@@ -437,7 +583,7 @@ a:hover {
 
 .pi-title {
   margin: 7px 0 0 !important;
-  color: var(--ink) !important;
+  color: var(--sea) !important;
   font-weight: 600;
 }
 
@@ -517,7 +663,21 @@ a:hover {
 }
 
 .contact {
+  position: relative;
+  isolation: isolate;
   padding: 52px 0 58px;
+}
+
+.contact::before {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 72%;
+  background: var(--sand);
+  content: "";
+  opacity: 0.7;
 }
 
 .contact-inner {
@@ -570,6 +730,7 @@ a:hover {
 .site-footer {
   margin-top: 42px;
   border-top: 1px solid var(--line);
+  background: var(--sand);
 }
 
 .site-footer > div {
@@ -675,6 +836,12 @@ a:hover {
     padding-bottom: 42px;
   }
 
+  .hero::before {
+    right: -22px;
+    left: -22px;
+    opacity: 0.15;
+  }
+
   .hero h1 {
     font-size: 34px;
   }
@@ -741,7 +908,19 @@ a:hover {
   *,
   *::before,
   *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes watercolor-drift {
+  from {
+    transform: translate3d(-4px, -2px, 0) scale(1.01);
+  }
+
+  to {
+    transform: translate3d(6px, 4px, 0) scale(1.025);
   }
 }
