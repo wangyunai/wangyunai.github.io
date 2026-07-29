@@ -303,6 +303,30 @@ a:hover {
   z-index: 1;
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 230px);
+  align-items: center;
+  gap: 26px;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-sketch {
+  align-self: center;
+  margin: 0 -10px 0 0;
+}
+
+.hero-sketch img {
+  display: block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
+
 .hero h1,
 .section-heading h2,
 .subsection-heading h3,
@@ -667,6 +691,91 @@ a:hover {
   text-underline-offset: 3px;
 }
 
+.favorite-quote {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  max-width: 720px;
+  margin: 30px 0 0;
+  padding: 28px 34px 30px;
+  border-top: 1px solid rgb(79 133 135 / 30%);
+  border-bottom: 1px solid rgb(79 133 135 / 30%);
+  background: #fffdf8;
+}
+
+.favorite-quote::before {
+  position: absolute;
+  z-index: -1;
+  inset: -40px -24px -36px 38%;
+  background: url("../images/watercolor-wash.webp") center / cover no-repeat;
+  content: "";
+  opacity: 0.18;
+  pointer-events: none;
+  transform: rotate(2deg);
+}
+
+.quote-label {
+  margin: 0 0 13px;
+  color: var(--sea);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.favorite-quote blockquote {
+  margin: 0;
+}
+
+.favorite-quote blockquote p {
+  margin: 0;
+  color: var(--ocean);
+  font-family:
+    "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC",
+    Georgia, serif;
+  font-size: clamp(22px, 3vw, 27px);
+  font-weight: 400;
+  letter-spacing: 0.035em;
+  line-height: 1.65;
+}
+
+.favorite-quote figcaption {
+  margin-top: 11px;
+  color: var(--muted);
+  font-family:
+    "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC",
+    Georgia, serif;
+  font-size: 13px;
+}
+
+.favorite-quote cite {
+  font-style: normal;
+}
+
+.quote-translation {
+  max-width: 570px;
+  margin: 19px 0 0;
+  padding-top: 17px;
+  border-top: 1px solid rgb(79 133 135 / 24%);
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.65;
+}
+
+.quote-translation span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--sea);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .member-list {
   margin-top: 36px;
   border-top: 1px solid var(--line);
@@ -837,6 +946,11 @@ a:hover {
     opacity: 0.2;
   }
 
+  .hero-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(170px, 220px);
+    gap: 20px;
+  }
+
   .profile-sidebar h2,
   .sidebar-long-name {
     grid-column: 1;
@@ -924,6 +1038,15 @@ a:hover {
     font-size: 17px;
   }
 
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-sketch {
+    width: min(210px, 66%);
+    margin: 25px auto -7px;
+  }
+
   .research-continuum li:not(:last-child)::after {
     width: 12px;
     margin: 0 6px;
@@ -963,6 +1086,14 @@ a:hover {
   .publication-item {
     grid-template-columns: 44px minmax(0, 1fr);
     gap: 14px;
+  }
+
+  .favorite-quote {
+    padding: 24px 23px 26px;
+  }
+
+  .favorite-quote::before {
+    left: 24%;
   }
 
   .contact-inner {
