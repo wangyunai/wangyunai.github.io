@@ -1,448 +1,572 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXMII Lab - Maternal and Infant Health Research</title>
-    
-    <!-- Initial visibility style -->
-    <style>
-        body { visibility: visible !important; }
-        .nav-menu, .research-domains { visibility: visible !important; }
-    </style>
-    
-    <!-- Preloader CSS - Load this first for faster perceived loading -->
-    <link rel="stylesheet" href="css/preloader.css">
-    
-    <!-- Preconnect to external domains to improve loading speed -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-        
-        // Function to track clicks
-        function trackClick(category, action, label) {
-            gtag('event', action, {
-                'event_category': category,
-                'event_label': label
-            });
-            console.log(`Analytics event: ${category} - ${action} - ${label}`); // Debug logging
-        }
-    </script>
-    
-    <!-- Performance optimization script - Load early -->
-    <script src="js/performance.js"></script>
-    
-    <!-- CSS Loader for optimized CSS delivery -->
-    <script src="js/css-loader.js"></script>
-    
-    <!-- Main stylesheets - Will be loaded by performance script -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/academic.css">
-    <link rel="stylesheet" href="css/team.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader-circle loader-circle-1"></div>
-            <div class="loader-circle loader-circle-2"></div>
-            <div class="loader-circle loader-circle-3"></div>
-            <div class="loader-text">
-                <img src="images/nexmii_logo.png" alt="NEXMII Lab Logo" class="loader-logo">
-                <span>NEXMII</span>
-            </div>
-        </div>
-        <div class="loader-progress">
-            <div class="loader-progress-bar"></div>
-        </div>
-        <div class="loading-text">Loading resources...</div>
-    </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NEXMII Lab | Maternal &amp; Infant Health Informatics</title>
+    <meta
+      name="description"
+      content="NEXMII Lab at Emory University develops interpretable computational methods for maternal, placental, fetal, and infant health."
+    />
+    <meta
+      name="keywords"
+      content="NEXMII Lab, maternal health, infant health, fetal MRI, placental MRI, neuroimaging, medical AI, health informatics, Emory University"
+    />
+    <link rel="canonical" href="https://wangyunai.github.io/" />
+    <link rel="icon" href="images/brand-mark.png" />
+    <link rel="stylesheet" href="css/site.css" />
 
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/nexmii_logo.png" alt="NEXMII Lab Logo">
-                <div class="logo-text">
-                    <span>NEXMII LAB</span>
-                </div>
-            </div>
-            <div class="mobile-menu-icon">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" onclick="trackClick('Navigation', 'Click', 'Home')">Home</a></li>
-                <li><a href="#news" onclick="trackClick('Navigation', 'Click', 'News')">News</a></li>
-                <li><a href="#research" onclick="trackClick('Navigation', 'Click', 'Research')">Research</a></li>
-                <li><a href="#innovations" onclick="trackClick('Navigation', 'Click', 'Innovations')">Innovations</a></li>
-                <li><a href="#funding" onclick="trackClick('Navigation', 'Click', 'Funding')">Funding</a></li>
-                <li><a href="#team" onclick="trackClick('Navigation', 'Click', 'Team')">Team</a></li>
-                <li><a href="#publications" onclick="trackClick('Navigation', 'Click', 'Publications')">Publications</a></li>
-                <li><a href="#contact" onclick="trackClick('Navigation', 'Click', 'Contact')">Contact</a></li>
-            </ul>
+    <meta
+      property="og:title"
+      content="NEXMII Lab | Maternal &amp; Infant Health Informatics"
+    />
+    <meta
+      property="og:description"
+      content="Computational methods for maternal and infant health."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wangyunai.github.io/" />
+    <meta
+      property="og:image"
+      content="https://wangyunai.github.io/images/og.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="NEXMII Lab | Maternal &amp; Infant Health Informatics"
+    />
+    <meta
+      name="twitter:description"
+      content="Computational methods for maternal and infant health."
+    />
+    <meta
+      name="twitter:image"
+      content="https://wangyunai.github.io/images/og.png"
+    />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-frame header-inner">
+        <a class="brand" href="#home" aria-label="NEXMII Lab home">
+          NEXMII Lab
+        </a>
+        <nav class="primary-navigation" aria-label="Primary navigation">
+          <a href="#research">Research</a>
+          <a href="#methods">Methods</a>
+          <a href="#publications">Publications</a>
+          <a href="#people">People</a>
+          <a href="#news">News</a>
         </nav>
+      </div>
     </header>
 
-    <section id="home" class="hero">
-        <h1>Welcome to NEXMII Lab</h1>
-        <h2 class="lab-full-name">Next Generation Maternal Infant Informatics</h2>
-        <p>Advancing maternal and infant health through innovative informatics solutions</p>
-        
-        <div class="research-domains">
-            <div class="domain-item">
-                <div class="domain-icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-                <span>Neuroimaging</span>
-            </div>
-            <div class="domain-item">
-                <div class="domain-icon">
-                    <i class="fas fa-dna"></i>
-                </div>
-                <span>Multi-omics</span>
-            </div>
-            <div class="domain-item">
-                <div class="domain-icon">
-                    <i class="fas fa-microchip"></i>
-                </div>
-                <span>AI</span>
-            </div>
-            <div class="domain-item">
-                <div class="domain-icon">
-                    <i class="fas fa-heartbeat"></i>
-                </div>
-                <span>Cardiometabolic</span>
-            </div>
-            <div class="domain-item">
-                <div class="domain-icon">
-                    <i class="fas fa-user-md"></i>
-                </div>
-                <span>Mental Health</span>
-            </div>
-        </div>
-    </section>
+    <div class="site-frame academic-shell">
+      <aside class="profile-sidebar" aria-label="Laboratory profile">
+        <h2>NEXMII Lab</h2>
+        <p class="sidebar-long-name">
+          Neurodevelopment &amp; eXplainable Medical Imaging Informatics
+        </p>
 
-    <section id="news">
-        <div class="section-header">
-            <h2>Lab News</h2>
-            <div class="section-subtitle">Latest updates and achievements from NEXMII Lab</div>
+        <div class="sidebar-group">
+          <strong>Yun Wang, Ph.D.</strong>
+          <p>
+            Assistant Professor<br />
+            Biomedical Informatics
+          </p>
         </div>
-        <div class="news-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="2025">2025</button>
-            <button class="filter-btn" data-filter="2024">2024</button>
-        </div>
-        <div class="news-container headline-style">
-            <!-- News items will be loaded from news.js -->
-        </div>
-    </section>
 
-    <section id="research">
-        <div class="research-pattern"></div>
-        <h2>Research Areas</h2>
-        <div class="section-subtitle">Advancing the Future of Healthcare Through Technology</div>
-        <div class="research-grid">
-            <div class="research-item">
-                <div class="research-icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-                <h3>Advanced Fetal and Infant Neuroimaging Analytics</h3>
-                <p>Developing state-of-the-art deep learning architectures for enhanced neuroimaging analysis, including automated volumetric segmentation, motion-robust reconstruction, and synthetic data generation. Our innovative approaches integrate multimodal neuroimaging data to decode complex neurodevelopmental trajectories and elucidate early brain development patterns.</p>
-            </div>
-            <div class="research-item">
-                <div class="research-icon">
-                    <i class="fas fa-dna"></i>
-                </div>
-                <h3>Early Neurodevelopmental Risk Pathway Analysis</h3>
-                <p>Investigating complex mechanistic pathways and gene-environment interactions that influence early neurodevelopmental trajectories, utilizing advanced computational methods to elucidate biological mechanisms underlying developmental vulnerability and resilience for early detection and intervention strategies.</p>
-            </div>
-            <div class="research-item">
-                <div class="research-icon">
-                    <i class="fas fa-microchip"></i>
-                </div>
-                <h3>AI-Driven Health Informatics</h3>
-                <p>Developing advanced machine learning frameworks and digital biomarkers for mental health and cardiometabolic health assessment and intervention. We leverage multimodal data integration and personalized AI algorithms to enhance early detection and therapeutic outcomes in neurodevelopmental, behavioral health, and cardiometabolic health domains, with special focus on maternal-infant dyads and developmental trajectories.</p>
-            </div>
+        <div class="sidebar-group">
+          <p>
+            Emory University<br />
+            School of Medicine<br />
+            Atlanta, Georgia
+          </p>
         </div>
-    </section>
 
-    <section id="innovations">
-        <div class="section-header">
-            <h2>Innovations & Technologies</h2>
-            <div class="section-subtitle">Cutting-edge tools and frameworks developed by our lab</div>
-        </div>
-        <div class="innovations-grid">
-            <!-- Innovations will be loaded from innovations.js -->
-        </div>
-    </section>
+        <nav class="sidebar-links" aria-label="Contact and profiles">
+          <a href="mailto:yun.wang2@emory.edu">Email</a>
+          <a href="https://github.com/wangyunai" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yun-wang-8308713b/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+        </nav>
+      </aside>
 
-    <section id="funding" class="funding-section">
-        <div class="section-header">
-            <h2>Research Funding</h2>
-            <div class="section-subtitle">Supporting our innovative research initiatives</div>
-        </div>
-        <div class="funding-container">
-            <div class="funding-item">
-                <div class="funding-header">
-                    <div class="funding-title">NICHD, R00HD103912</div>
-                    <div class="funding-amount">2024-2027</div>
-                </div>
-                <div class="funding-period">04/2024 – 03/2027</div>
-                <div class="funding-role">Principal Investigator</div>
-                <div class="funding-agency">National Institute of Child Health and Human Development (NICHD)</div>
-                <div class="funding-project-title">Leveraging Artificial Intelligence To Develop Novel Tools For Studying Infant Brain Development</div>
-                <div class="funding-description">This proposal leverages artificial intelligence and large-scale datasets to address unmet technical challenges in infant brain segmentation, to delineate the growth trajectories of brain structure/function and measure their relationship with neuro-cognitive functions, and to predict the developmental outcomes. Results from this study will address fundamental methodological limitations and fill critical knowledge gaps of early development, advancing efforts toward early identification of developmental delays and disorders.</div>
-            </div>
-            
-            <div class="funding-item">
-                <div class="funding-header">
-                    <div class="funding-title">NIMH R01MH133313</div>
-                    <div class="funding-amount">2024-2028</div>
-                </div>
-                <div class="funding-period">04/2024 – 03/2028</div>
-                <div class="funding-role">Multiple Principal Investigator (with Dr. Jonathan Posner)</div>
-                <div class="funding-agency">National Institute of Mental Health (NIMH)</div>
-                <div class="funding-project-title">Prenatal Maternal Obesity And Neurodevelopment: The Mediating Role Of The Microbiome And Metabolome</div>
-                <div class="funding-description">Pre-pregnancy obesity has long been associated with indicators of impaired emotion regulation in children – e.g., increased rates of psychiatric disorders with emotion regulation deficits such as depressive and anxiety disorders. Our proposal aims to test the overarching mechanistic hypothesis that pre-pregnancy maternal obesity negatively influences emotion regulation and thus increases risk for psychopathology in children through its effects on the maternal gut microbiome and metabolome.</div>
-            </div>
-            
-            <div class="funding-item">
-                <div class="funding-header">
-                    <div class="funding-title">Brain & Behavior Research Foundation</div>
-                    <div class="funding-amount">2022-2025</div>
-                </div>
-                <div class="funding-period">01/2022 – 01/2025</div>
-                <div class="funding-role">Principal Investigator</div>
-                <div class="funding-agency">Brain & Behavior Research Foundation</div>
-                <div class="funding-project-title">Adverse Impact Of In Utero SSRI Exposure On Offspring's Brain Myelination At Birth And Social Behavior At 12 Months</div>
-                <div class="funding-description">The proposed project builds on an existing cohort (funded by NIMH) and leverages longitudinal assessment of maternal depression and family environment to investigate the impact of prenatal SSRI exposure on early brain development and behavioral outcomes.</div>
-            </div>
-        </div>
-    </section>
+      <main id="main-content" class="content-column">
+        <section class="hero" id="home">
+          <div class="site-frame">
+            <h1>About the lab</h1>
+            <p class="hero-summary">
+              NEXMII Lab develops interpretable computational methods for
+              maternal, placental, fetal, and infant health. We combine
+              multimodal MRI, machine learning, multi-omics, and longitudinal
+              behavioral data to study early human development.
+            </p>
+            <p class="hero-detail">
+              Our work examines how maternal context and placental function
+              influence fetal circulation, brain development, and
+              neurobehavioral outcomes. The goal is to identify measurable and
+              potentially modifiable pathways that can support earlier
+              intervention.
+            </p>
+          </div>
+        </section>
 
-    <section id="team">
-        <div class="section-header">
-            <h2>Our Team</h2>
-            <div class="section-subtitle">Meet the researchers driving our innovations</div>
-        </div>
-        
-        <div class="team-container">
-            <!-- Principal Investigator -->
-            <div class="team-pi">
-                <div class="pi-card">
-                    <div class="pi-photo">
-                        <img src="images/yun_wang.png" alt="Dr. Yun Wang">
-                    </div>
-                    <div class="pi-info">
-                        <div class="pi-role">Principal Investigator</div>
-                        <h3>Yun Wang, Ph.D.</h3>
-                        <a href="https://www.dropbox.com/scl/fi/xbe2q7kl5lni8htyuuntc/YUN-WANG_CV.docx?rlkey=4xbeo1v790ozz2g71ol2qf7b1&e=1&dl=0" class="cv-link" target="_blank" onclick="trackClick('Documents', 'Download', 'CV Download')">
-                            <i class="fas fa-file-alt"></i>
-                            Curriculum Vitae
-                        </a>
-                    </div>
+        <section class="section" id="research">
+          <div class="site-frame">
+            <header class="section-heading">
+              <h2>Research</h2>
+              <p>
+                Our program is supported by four active NIH awards and has
+                contributed to 32 peer-reviewed publications.
+              </p>
+            </header>
+
+            <div class="research-list">
+              <article class="research-item">
+                <div>
+                  <h3>AI Methods for Perinatal Imaging Phenotypes</h3>
+                  <p>
+                    We develop learning methods for fetal, placental, newborn,
+                    and infant MRI. Our work addresses motion, changing anatomy,
+                    variable contrast, scanner differences, and limited labels
+                    to produce interpretable developmental phenotypes.
+                  </p>
+                  <small>
+                    Self-supervised learning · Domain adaptation · Foundation
+                    models
+                  </small>
                 </div>
+              </article>
+
+              <article class="research-item">
+                <div>
+                  <h3>Placental and Fetal-Circulatory Pathways</h3>
+                  <p>
+                    We study how maternal metabolism, inflammation, stress,
+                    medications, and environmental context shape placental
+                    function, fetal hemodynamics, oxygen delivery, and early
+                    brain development.
+                  </p>
+                  <small>
+                    Placental MRI · Fetal circulation · Multi-omics
+                  </small>
+                </div>
+              </article>
+
+              <article class="research-item">
+                <div>
+                  <h3>From Perinatal Phenotypes to Neurobehavioral Risk</h3>
+                  <p>
+                    We connect perinatal imaging phenotypes with regulation,
+                    attention, social communication, NICU course, and early
+                    psychopathology risk, with an emphasis on modifiable
+                    pathways and early prevention.
+                  </p>
+                  <small>
+                    Longitudinal outcomes · Early behavior · Prevention
+                  </small>
+                </div>
+              </article>
             </div>
 
-            <!-- Other Team Members -->
-            <div class="team-categories">
-                <div class="team-category">
-                    <h3>Research Staff</h3>
-                    <div class="team-grid">
-                        <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <h4>Ruiying Liu, Ph.D.</h4>
-                            <p class="member-role">Postdoctoral Fellow</p>
-                        </div>
-                        <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <h4>Noah Marchuck</h4>
-                            <p class="member-role">Research Specialist</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="support-block" id="funding">
+              <div class="subsection-heading">
+                <h3>Active support</h3>
+                <p>Current federally funded research programs.</p>
+              </div>
 
-                <div class="team-category">
-                    <h3>Graduate Students</h3>
-                    <div class="team-grid">
-                        <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <h4>Xinliu Zhong</h4>
-                            <p class="member-role">Ph.D. Student</p>
-                            <p class="member-dept">Computer Science & Informatics</p>
-                            <p class="member-inst">Emory University</p>
-                        </div>
-                        <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <h4>Yuxin Zhu</h4>
-                            <p class="member-role">Ph.D. Student</p>
-                            <p class="member-dept">Computer Science & Informatics</p>
-                            <p class="member-inst">Emory University</p>
-                        </div>
-                        <div class="team-member">
-                            <div class="member-photo">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <h4>Xuzhe Zhang</h4>
-                            <p class="member-role">Ph.D. Student (Co-mentored)</p>
-                            <p class="member-dept">Biomedical Engineering</p>
-                            <p class="member-inst">Columbia University</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-category">
-                    <h3>Alumni</h3>
-                    <div class="team-grid">
-                        <!-- Future alumni will be added here -->
-                    </div>
-                </div>
+              <div class="funding-list">
+                <article class="funding-item">
+                  <div class="funding-code">
+                    <strong>NICHD</strong>
+                    <span>R01HD121683</span>
+                  </div>
+                  <p>
+                    The Maternal Obesity–Placenta–Brain Axis: Longitudinal MRI
+                    from Gestation to Infancy
+                  </p>
+                  <div class="funding-meta">
+                    <span>PI</span><span>2026–2031</span>
+                  </div>
+                </article>
+
+                <article class="funding-item">
+                  <div class="funding-code">
+                    <strong>NIMH</strong>
+                    <span>R01MH133313</span>
+                  </div>
+                  <p>
+                    Prenatal Maternal Obesity and Neurodevelopment: The
+                    Mediating Role of the Microbiome and Metabolome
+                  </p>
+                  <div class="funding-meta">
+                    <span>Multiple PI</span><span>2024–2028</span>
+                  </div>
+                </article>
+
+                <article class="funding-item">
+                  <div class="funding-code">
+                    <strong>NICHD</strong>
+                    <span>R00HD103912</span>
+                  </div>
+                  <p>
+                    Leveraging Artificial Intelligence to Develop Novel Tools
+                    for Studying Infant Brain Development
+                  </p>
+                  <div class="funding-meta">
+                    <span>PI</span><span>2024–2027</span>
+                  </div>
+                </article>
+
+                <article class="funding-item">
+                  <div class="funding-code">
+                    <strong>NIH</strong>
+                    <span>U54HD122209</span>
+                  </div>
+                  <p>
+                    ARISEN: Autoimmunity, Rasmussen’s, Inflammation &amp; Status
+                    Epilepticus Research Network
+                  </p>
+                  <div class="funding-meta">
+                    <span>Co-Investigator</span><span>2025–2030</span>
+                  </div>
+                </article>
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
 
-    <section id="publications">
-        <div class="section-header">
-            <h2>Selected Publications</h2>
-            <div class="section-subtitle">Recent research outputs and scientific contributions</div>
-        </div>
-        <div class="publications-container">
-            <div class="publication-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="2025">2025</button>
-                <button class="filter-btn" data-filter="2024">2024</button>
-                <button class="filter-btn" data-filter="2023">2023</button>
-                <button class="filter-btn" data-filter="2022">2022</button>
-            </div>
-            <div class="publications-grid">
-                <div class="publication-item">
-                    <div class="pub-year">2025</div>
-                    <div class="pub-content">
-                        <h3>Prediction of mental health risk in adolescents</h3>
-                        <p class="authors">Hill, ED., Kashyap, P., Raffanello, E., Wang, Y., Moffitt, TE., Caspi, A., ...</p>
-                        <p class="journal">Nature Medicine</p>
-                        <p class="pages">1-7</p>
-                    </div>
+        <section class="section" id="methods">
+          <div class="site-frame">
+            <header class="section-heading">
+              <h2>Methods and software</h2>
+              <p>
+                Our methods account for motion, rapid anatomical change, sparse
+                labels, and heterogeneous scanners in fetal, placental,
+                newborn, and infant MRI.
+              </p>
+            </header>
+
+            <div class="methods-list">
+              <article class="method-item">
+                <p>Federated infant neuroimaging platform · 2022</p>
+                <h3>FINNEAS</h3>
+                <div>
+                  Privacy-preserving, cloud-based analysis that makes advanced
+                  infant MRI methods accessible without requiring programming
+                  expertise.
                 </div>
-
-                <div class="publication-item">
-                    <div class="pub-year">2024</div>
-                    <div class="pub-content">
-                        <h3>Reduced dorsal fronto-striatal connectivity at rest in anorexia nervosa</h3>
-                        <p class="authors">Muratore, AF., Foerde, K., Lloyd, EC., Touzeau, C., Uniacke, B., Aw, N., Wang, Y., ...</p>
-                        <p class="journal">Psychological Medicine</p>
-                        <p class="pages">54 (9), 2200-2209</p>
-                    </div>
+              </article>
+              <article class="method-item">
+                <p>Medical image segmentation · CVPR 2024</p>
+                <h3>MAPSeg</h3>
+                <div>
+                  Unified domain adaptation for heterogeneous 3D medical images
+                  using masked autoencoding and pseudo-labeling.
                 </div>
-
-                <div class="publication-item">
-                    <div class="pub-year">2024</div>
-                    <div class="pub-content">
-                        <h3>Segmenting hypothalamic subunits in human newborn magnetic resonance imaging data</h3>
-                        <p class="authors">Rasmussen, JM., Wang, Y., Graham, AM., Fair, DA., Posner, J., O'Connor, TG., ...</p>
-                        <p class="journal">Human Brain Mapping</p>
-                        <p class="pages">45 (2), e26582</p>
-                    </div>
+              </article>
+              <article class="method-item">
+                <p>Language-guided segmentation · MIDL 2026</p>
+                <h3>NeuroLangSeg</h3>
+                <div>
+                  Subcortical segmentation with pseudo-supervision and
+                  anatomical–linguistic validation.
                 </div>
-
-                <div class="publication-item">
-                    <div class="pub-year">2024</div>
-                    <div class="pub-content">
-                        <h3>MAPSeg: Unified unsupervised domain adaptation for heterogeneous medical image segmentation based on 3D masked autoencoding and pseudo-labeling</h3>
-                        <p class="authors">Zhang, X., Wu, Y., Angelini, E., Li, A., Guo, J., Rasmussen, JM., O'Connor, TG., Wang, Y., ...</p>
-                        <p class="journal">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</p>
-                    </div>
+              </article>
+              <article class="method-item">
+                <p>Diffusion reconstruction · MIDL 2026</p>
+                <h3>Fetal MRI Super-Resolution</h3>
+                <div>
+                  Orientation-aware diffusion models that recover 3T-like detail
+                  from routine 1.5T fetal MRI.
                 </div>
+              </article>
+              <article class="method-item">
+                <p>Quantitative placental MRI · MICCAI 2025</p>
+                <h3>Placental MRI Phenotyping</h3>
+                <div>
+                  Contrast-invariant self-supervised segmentation for
+                  reproducible measurement across imaging conditions.
+                </div>
+              </article>
+              <article class="method-item">
+                <p>Longitudinal MRI synthesis · IEEE TMI 2022</p>
+                <h3>PTNet3D</h3>
+                <div>
+                  A 3D transformer-based framework for high-resolution
+                  longitudinal infant brain MRI synthesis.
+                </div>
+              </article>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
 
-    <section id="contact">
-        <div class="section-header">
-            <h2>Contact</h2>
-            <div class="section-subtitle">Get in touch with our research team</div>
-        </div>
-        <div class="contact-container">
-            <div class="contact-form-container">
-                <h3>Interested in joining or collaborating?</h3>
-                <p class="form-subtitle">Please leave us a message using the form below or email us directly at <a href="mailto:yun.wang2@emory.edu" class="email-link">yun.wang2@emory.edu</a>.</p>
-                
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject" required>
-                            <option value="" selected>Select an option</option>
-                            <option value="research">Research Collaboration</option>
-                            <option value="join">Joining the Lab</option>
-                            <option value="student">Student Opportunity</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-            
-            <div class="social-links">
-                <a href="https://github.com/wangyunai" class="social-link" onclick="trackClick('Social', 'Click', 'GitHub')" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/yun-wang-8308713b/" class="social-link" onclick="trackClick('Social', 'Click', 'LinkedIn')" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </section>
+        <section class="section" id="publications">
+          <div class="site-frame">
+            <header class="section-heading">
+              <h2>Selected publications</h2>
+              <p>
+                Recent and representative work across medical imaging, machine
+                learning, neurodevelopment, and mental health.
+              </p>
+            </header>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">NEXMII LAB</div>
-            <p>&copy; 2024 Next Generation Maternal Infant Informatics Laboratory. All rights reserved.</p>
-            <a href="#" id="admin-login" style="opacity: 0.1; font-size: 10px; color: #888; margin-top: 20px; display: inline-block;" onclick="adminLogin(); return false;">Admin</a>
-        </div>
+            <div class="publication-list">
+              <article class="publication-item">
+                <span>2026</span>
+                <div>
+                  <h3>
+                    NeuroLangSeg: Language-Guided Subcortical Segmentation with
+                    Pseudo-Supervision and Anatomical–Linguistic Validation
+                  </h3>
+                  <p>Liu, R., Liu, J., Zhang, X., Huang, C., &amp; Wang, Y.</p>
+                  <em>Medical Imaging with Deep Learning</em>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span>2026</span>
+                <div>
+                  <h3>
+                    Orientation-Aware Diffusion Super-Resolution for 3T-Like
+                    Fetal MRI from Routine 1.5T Scans
+                  </h3>
+                  <p>
+                    Zhong, X., Liu, R., Lin, G., Huang, C., Goldman-Yassen, A.,
+                    Mehollin-Ray, A., &amp; Wang, Y.
+                  </p>
+                  <em>Medical Imaging with Deep Learning</em>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span>2026</span>
+                <div>
+                  <h3>
+                    A Two-Stage Multi-Modal MRI Framework for Lifespan Brain Age
+                    Prediction
+                  </h3>
+                  <p>Zhang, D., et al., &amp; Wang, Y.</p>
+                  <em>Medical Imaging with Deep Learning</em>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span>2025</span>
+                <div>
+                  <h3>
+                    Contrast-Invariant Self-supervised Segmentation for
+                    Quantitative Placental MRI
+                  </h3>
+                  <p>
+                    Zhong, X., Liu, R., Nichols, E. S., Zhang, X., Laine, A. F.,
+                    Duerden, E. G., &amp; Wang, Y.
+                  </p>
+                  <em>MICCAI PIPPI</em>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span>2025</span>
+                <div>
+                  <h3>
+                    <a
+                      href="https://doi.org/10.1038/s41591-025-03560-7"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Prediction of Mental Health Risk in Adolescents
+                    </a>
+                  </h3>
+                  <p>
+                    Hill, E. D., Kashyap, P., Raffanello, E., Wang, Y., Moffitt,
+                    T. E., Caspi, A., et al.
+                  </p>
+                  <em>Nature Medicine</em>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span>2024</span>
+                <div>
+                  <h3>
+                    MAPSeg: Unified Unsupervised Domain Adaptation for
+                    Heterogeneous Medical Image Segmentation
+                  </h3>
+                  <p>
+                    Zhang, X., Wu, Y., Angelini, E., Li, A., Guo, J., Rasmussen,
+                    J. M., O’Connor, T. G., Wang, Y., et al.
+                  </p>
+                  <em>
+                    IEEE/CVF Conference on Computer Vision and Pattern
+                    Recognition
+                  </em>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span>2024</span>
+                <div>
+                  <h3>
+                    <a
+                      href="https://doi.org/10.1002/hbm.26582"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Segmenting Hypothalamic Subunits in Human Newborn Magnetic
+                      Resonance Imaging Data
+                    </a>
+                  </h3>
+                  <p>
+                    Rasmussen, J. M., Wang, Y., Graham, A. M., Fair, D. A.,
+                    Posner, J., O’Connor, T. G., et al.
+                  </p>
+                  <em>Human Brain Mapping</em>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span>2019</span>
+                <div>
+                  <h3>
+                    The Association Between Antidepressant Treatment and Brain
+                    Connectivity in Two Double-Blind, Placebo-Controlled
+                    Clinical Trials
+                  </h3>
+                  <p>
+                    Wang, Y., Bernanke, J., Peterson, B. S., McGrath, P.,
+                    Stewart, J., Chen, Y., et al.
+                  </p>
+                  <em>The Lancet Psychiatry</em>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="people">
+          <div class="site-frame">
+            <header class="section-heading">
+              <h2>People</h2>
+              <p>
+                We train researchers to develop rigorous computational methods
+                while staying grounded in biological and clinical questions.
+              </p>
+            </header>
+
+            <article class="pi-profile">
+              <div>
+                <p class="profile-label">Principal Investigator</p>
+                <h3>Yun Wang, Ph.D.</h3>
+                <p class="pi-title">
+                  Tenure-track Assistant Professor of Biomedical Informatics
+                </p>
+                <p>
+                  Dr. Wang holds secondary appointments in Gynecology &amp;
+                  Obstetrics and Radiology &amp; Imaging Sciences at Emory
+                  University School of Medicine. Her research develops
+                  interpretable computational methods for maternal, placental,
+                  fetal, and infant health.
+                </p>
+                <a href="mailto:yun.wang2@emory.edu">
+                  yun.wang2@emory.edu
+                </a>
+              </div>
+            </article>
+
+            <div class="member-list" aria-label="Lab members">
+              <article class="member-item">
+                <h3>Ruiying Liu, Ph.D.</h3>
+                <p>Postdoctoral Fellow</p>
+                <span>
+                  Segmentation, motion correction, and foundation models
+                </span>
+              </article>
+              <article class="member-item">
+                <h3>Xinliu Zhong</h3>
+                <p>Ph.D. Candidate · Emory University</p>
+                <span>Placental and fetal MRI</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="news">
+          <div class="site-frame">
+            <header class="section-heading compact-heading">
+              <h2>News</h2>
+            </header>
+            <div class="news-list">
+              <article class="news-item">
+                <time>June 2026</time>
+                <p>
+                  New NICHD R01 supports a longitudinal study of the maternal
+                  obesity–placenta–brain axis.
+                </p>
+              </article>
+              <article class="news-item">
+                <time>2026</time>
+                <p>
+                  Three senior-author papers accepted at Medical Imaging with
+                  Deep Learning.
+                </p>
+              </article>
+              <article class="news-item">
+                <time>September 2025</time>
+                <p>NEXMII joins the NIH U54 ARISEN research network.</p>
+              </article>
+              <article class="news-item">
+                <time>March 2025</time>
+                <p>
+                  Mental health prediction study published in Nature Medicine
+                  and featured by Georgia Public Broadcasting.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="site-frame contact-inner">
+            <div>
+              <h2>Contact</h2>
+              <p>Research, collaboration, and training inquiries are welcome.</p>
+            </div>
+            <div class="contact-details">
+              <a href="mailto:yun.wang2@emory.edu">
+                yun.wang2@emory.edu
+              </a>
+              <p>Emory University School of Medicine · Atlanta, Georgia</p>
+              <nav aria-label="External profiles">
+                <a
+                  href="https://github.com/wangyunai"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/yun-wang-8308713b/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </nav>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-frame">
+        <span>© 2026 NEXMII Lab</span>
+        <span>Maternal &amp; Infant Health Informatics</span>
+      </div>
     </footer>
-    
-    <!-- Scripts - Ordered for optimal loading -->
-    <script src="js/research.js"></script>
-    <script src="js/funding.js"></script>
-    <script src="js/team.js"></script>
-    <script src="js/publications.js"></script>
-    <script src="js/news.js"></script>
-    <script src="js/innovations.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/reminder.js"></script>
-    <script src="js/image-optimizer.js"></script>
-    <!-- Analytics setup guide in js/readme_analytics.js -->
-    <script>
-        function adminLogin() {
-            const password = prompt("Enter admin password:");
-            if (password === "nexmii2024") { // Change this to your desired password
-                localStorage.setItem('isNexmiiAdmin', 'true');
-                alert("Admin mode activated. You will now receive monthly update reminders on the last Sunday of each month.");
-            }
-        }
-    </script>
-</body>
+  </body>
 </html>
