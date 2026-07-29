@@ -172,6 +172,80 @@ a:hover {
   transform: scaleX(1);
 }
 
+.top-quote {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(79 133 135 / 24%);
+  background: #fbfaf4;
+}
+
+.top-quote::before {
+  position: absolute;
+  z-index: -1;
+  inset: -38px -10px;
+  background: url("../images/watercolor-wash.webp") 70% 46% / 680px auto
+    no-repeat;
+  content: "";
+  opacity: 0.13;
+  pointer-events: none;
+  transform: rotate(-1deg);
+}
+
+.top-quote-inner {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 34px;
+  margin-block: 0;
+  padding-block: 16px;
+}
+
+.top-quote blockquote {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.top-quote blockquote p {
+  margin: 0;
+  color: var(--ocean);
+  font-family:
+    "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC",
+    Georgia, serif;
+  font-size: clamp(22px, 2.4vw, 28px);
+  font-weight: 400;
+  letter-spacing: 0.055em;
+  line-height: 1.35;
+}
+
+.top-quote figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 16px;
+  color: var(--muted);
+  text-align: right;
+}
+
+.top-quote cite {
+  flex: 0 0 auto;
+  color: var(--sea);
+  font-family:
+    "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC",
+    Georgia, serif;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.top-quote figcaption p {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
 .academic-shell {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
@@ -691,91 +765,6 @@ a:hover {
   text-underline-offset: 3px;
 }
 
-.favorite-quote {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  max-width: 720px;
-  margin: 30px 0 0;
-  padding: 28px 34px 30px;
-  border-top: 1px solid rgb(79 133 135 / 30%);
-  border-bottom: 1px solid rgb(79 133 135 / 30%);
-  background: #fffdf8;
-}
-
-.favorite-quote::before {
-  position: absolute;
-  z-index: -1;
-  inset: -40px -24px -36px 38%;
-  background: url("../images/watercolor-wash.webp") center / cover no-repeat;
-  content: "";
-  opacity: 0.18;
-  pointer-events: none;
-  transform: rotate(2deg);
-}
-
-.quote-label {
-  margin: 0 0 13px;
-  color: var(--sea);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-}
-
-.favorite-quote blockquote {
-  margin: 0;
-}
-
-.favorite-quote blockquote p {
-  margin: 0;
-  color: var(--ocean);
-  font-family:
-    "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC",
-    Georgia, serif;
-  font-size: clamp(22px, 3vw, 27px);
-  font-weight: 400;
-  letter-spacing: 0.035em;
-  line-height: 1.65;
-}
-
-.favorite-quote figcaption {
-  margin-top: 11px;
-  color: var(--muted);
-  font-family:
-    "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC",
-    Georgia, serif;
-  font-size: 13px;
-}
-
-.favorite-quote cite {
-  font-style: normal;
-}
-
-.quote-translation {
-  max-width: 570px;
-  margin: 19px 0 0;
-  padding-top: 17px;
-  border-top: 1px solid rgb(79 133 135 / 24%);
-  color: var(--muted);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 14px;
-  font-style: italic;
-  line-height: 1.65;
-}
-
-.quote-translation span {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--sea);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  font-size: 9px;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
 .member-list {
   margin-top: 36px;
   border-top: 1px solid var(--line);
@@ -1088,12 +1077,27 @@ a:hover {
     gap: 14px;
   }
 
-  .favorite-quote {
-    padding: 24px 23px 26px;
+  .top-quote-inner {
+    min-height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+    padding-block: 13px 15px;
   }
 
-  .favorite-quote::before {
-    left: 24%;
+  .top-quote blockquote p {
+    font-size: 22px;
+  }
+
+  .top-quote figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1px;
+    text-align: left;
+  }
+
+  .top-quote figcaption p {
+    font-size: 12px;
   }
 
   .contact-inner {
