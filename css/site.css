@@ -317,6 +317,13 @@ a:hover {
   font-size: 14px;
 }
 
+.sidebar-group strong a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgb(79 133 135 / 45%);
+  text-underline-offset: 3px;
+}
+
 .sidebar-group p {
   margin: 6px 0 0;
   color: var(--muted);
@@ -765,6 +772,14 @@ a:hover {
   text-underline-offset: 3px;
 }
 
+.pi-profile h3 a {
+  color: inherit;
+}
+
+.pi-profile .profile-detail-link {
+  margin-left: 18px;
+}
+
 .member-list {
   margin-top: 36px;
   border-top: 1px solid var(--line);
@@ -1003,6 +1018,7 @@ a:hover {
 
   .sidebar-links {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 17px;
     margin-top: 22px;
     padding-left: 0;
