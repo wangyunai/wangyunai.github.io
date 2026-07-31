@@ -16,7 +16,7 @@
     />
     <link rel="canonical" href="https://wangyunai.github.io/" />
     <link rel="icon" href="/images/brand-mark.png" />
-    <link rel="stylesheet" href="/css/site.css?v=20260729-seo" />
+    <link rel="stylesheet" href="/css/site.css?v=20260730-editorial" />
 
     <meta
       property="og:title"
@@ -31,13 +31,13 @@
     <meta property="og:url" content="https://wangyunai.github.io/" />
     <meta
       property="og:image"
-      content="https://wangyunai.github.io/images/og-theme-v2.png"
+      content="https://wangyunai.github.io/images/og-editorial-v3.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="NEXMII Lab at Emory University, led by Yun Wang, PhD"
+      content="NEXMII Lab — Mapping early-life development from placenta to brain"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -50,11 +50,11 @@
     />
     <meta
       name="twitter:image"
-      content="https://wangyunai.github.io/images/og-theme-v2.png"
+      content="https://wangyunai.github.io/images/og-editorial-v3.png"
     />
     <meta
       name="twitter:image:alt"
-      content="NEXMII Lab at Emory University, led by Yun Wang, PhD"
+      content="NEXMII Lab — Mapping early-life development from placenta to brain"
     />
     <script type="application/ld+json">
       {
@@ -142,18 +142,6 @@
         </nav>
       </div>
     </header>
-
-    <section class="top-quote" aria-label="Guiding passage">
-      <figure class="site-frame top-quote-inner">
-        <blockquote lang="zh-Hans">
-          <p>生生之谓易。</p>
-        </blockquote>
-        <figcaption>
-          <cite>《周易·系辞上传》</cite>
-          <p>Life is a continuous process of becoming.</p>
-        </figcaption>
-      </figure>
-    </section>
 
     <div class="site-frame academic-shell">
       <aside class="profile-sidebar" aria-label="Laboratory profile">
@@ -251,14 +239,25 @@
                 </ol>
               </div>
             </div>
-            <figure class="hero-sketch">
-              <img
-                src="images/mother-infant-sketch.webp"
-                alt="Watercolor line drawing of a mother cradling her infant"
-                width="720"
-                height="1080"
-              />
-            </figure>
+            <div class="hero-visual">
+              <figure class="hero-sketch">
+                <img
+                  src="images/mother-infant-sketch.webp"
+                  alt="Watercolor line drawing of a mother cradling her infant"
+                  width="720"
+                  height="1080"
+                />
+              </figure>
+              <figure class="hero-epigraph" aria-label="Guiding passage">
+                <blockquote lang="zh-Hans">
+                  <p>生生之谓易。</p>
+                </blockquote>
+                <figcaption>
+                  <cite>《周易·系辞上传》</cite>
+                  <span>Life is a continuous process of becoming.</span>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </section>
 
@@ -274,6 +273,7 @@
 
             <div class="research-list">
               <article class="research-item">
+                <span class="research-number" aria-hidden="true">01</span>
                 <div>
                   <h3>AI Methods for Perinatal Imaging Phenotypes</h3>
                   <p>
@@ -290,6 +290,7 @@
               </article>
 
               <article class="research-item">
+                <span class="research-number" aria-hidden="true">02</span>
                 <div>
                   <h3>Placental and Fetal-Circulatory Pathways</h3>
                   <p>
@@ -305,6 +306,7 @@
               </article>
 
               <article class="research-item">
+                <span class="research-number" aria-hidden="true">03</span>
                 <div>
                   <h3>From Perinatal Phenotypes to Neurobehavioral Risk</h3>
                   <p>
@@ -387,7 +389,7 @@
           </div>
         </section>
 
-        <section class="section" id="methods">
+        <section class="section methods-section" id="methods">
           <div class="site-frame">
             <header class="section-heading">
               <h2>Methods and software</h2>
@@ -397,6 +399,60 @@
                 newborn, and infant MRI.
               </p>
             </header>
+
+            <figure
+              class="scientific-plate"
+              aria-labelledby="scientific-plate-caption"
+            >
+              <div class="scientific-plate-grid">
+                <div class="scientific-plate-slot">
+                  <div class="scientific-plate-image">
+                    <img
+                      src="images/research-placenta.png"
+                      alt="Scientific illustration of placental vasculature"
+                      width="230"
+                      height="185"
+                    />
+                  </div>
+                  <div class="scientific-plate-label">
+                    <span aria-hidden="true">01</span>
+                    <strong>Placenta</strong>
+                  </div>
+                </div>
+                <div class="scientific-plate-slot">
+                  <div class="scientific-plate-image">
+                    <img
+                      src="images/research-circulation.png"
+                      alt="Scientific illustration of fetal circulation through the heart"
+                      width="150"
+                      height="190"
+                    />
+                  </div>
+                  <div class="scientific-plate-label">
+                    <span aria-hidden="true">02</span>
+                    <strong>Fetal circulation</strong>
+                  </div>
+                </div>
+                <div class="scientific-plate-slot">
+                  <div class="scientific-plate-image">
+                    <img
+                      src="images/research-brain.png"
+                      alt="Scientific illustration of the developing brain"
+                      width="190"
+                      height="155"
+                    />
+                  </div>
+                  <div class="scientific-plate-label">
+                    <span aria-hidden="true">03</span>
+                    <strong>Developing brain</strong>
+                  </div>
+                </div>
+              </div>
+              <figcaption id="scientific-plate-caption">
+                A visual research continuum connecting placental function,
+                fetal circulation, and the developing brain.
+              </figcaption>
+            </figure>
 
             <div class="methods-list">
               <article class="method-item">
@@ -452,7 +508,7 @@
           </div>
         </section>
 
-        <section class="section" id="publications">
+        <section class="section publications-section" id="publications">
           <div class="site-frame">
             <header class="section-heading">
               <h2>Selected publications</h2>
@@ -464,7 +520,10 @@
 
             <div class="publication-list">
               <article class="publication-item">
-                <span>2026</span>
+                <span class="publication-marker">
+                  <b aria-hidden="true">[01]</b>
+                  <time datetime="2026">2026</time>
+                </span>
                 <div>
                   <h3>
                     NeuroLangSeg: Language-Guided Subcortical Segmentation with
@@ -475,7 +534,10 @@
                 </div>
               </article>
               <article class="publication-item">
-                <span>2026</span>
+                <span class="publication-marker">
+                  <b aria-hidden="true">[02]</b>
+                  <time datetime="2026">2026</time>
+                </span>
                 <div>
                   <h3>
                     Orientation-Aware Diffusion Super-Resolution for 3T-Like
@@ -489,7 +551,10 @@
                 </div>
               </article>
               <article class="publication-item">
-                <span>2026</span>
+                <span class="publication-marker">
+                  <b aria-hidden="true">[03]</b>
+                  <time datetime="2026">2026</time>
+                </span>
                 <div>
                   <h3>
                     A Two-Stage Multi-Modal MRI Framework for Lifespan Brain Age
@@ -500,7 +565,10 @@
                 </div>
               </article>
               <article class="publication-item">
-                <span>2025</span>
+                <span class="publication-marker">
+                  <b aria-hidden="true">[04]</b>
+                  <time datetime="2025">2025</time>
+                </span>
                 <div>
                   <h3>
                     Contrast-Invariant Self-supervised Segmentation for
@@ -514,7 +582,10 @@
                 </div>
               </article>
               <article class="publication-item">
-                <span>2025</span>
+                <span class="publication-marker">
+                  <b aria-hidden="true">[05]</b>
+                  <time datetime="2025">2025</time>
+                </span>
                 <div>
                   <h3>
                     <a
@@ -533,7 +604,10 @@
                 </div>
               </article>
               <article class="publication-item">
-                <span>2024</span>
+                <span class="publication-marker">
+                  <b aria-hidden="true">[06]</b>
+                  <time datetime="2024">2024</time>
+                </span>
                 <div>
                   <h3>
                     MAPSeg: Unified Unsupervised Domain Adaptation for
@@ -550,7 +624,10 @@
                 </div>
               </article>
               <article class="publication-item">
-                <span>2024</span>
+                <span class="publication-marker">
+                  <b aria-hidden="true">[07]</b>
+                  <time datetime="2024">2024</time>
+                </span>
                 <div>
                   <h3>
                     <a
@@ -570,7 +647,10 @@
                 </div>
               </article>
               <article class="publication-item">
-                <span>2019</span>
+                <span class="publication-marker">
+                  <b aria-hidden="true">[08]</b>
+                  <time datetime="2019">2019</time>
+                </span>
                 <div>
                   <h3>
                     The Association Between Antidepressant Treatment and Brain
@@ -588,13 +668,15 @@
           </div>
         </section>
 
-        <section class="section" id="people">
+        <section class="section people-section" id="people">
           <div class="site-frame">
             <header class="section-heading">
               <h2>People</h2>
               <p>
-                We train researchers to develop rigorous computational methods
-                while staying grounded in biological and clinical questions.
+                We are a small interdisciplinary group working where
+                computation, imaging, and maternal–infant health meet. We train
+                researchers to develop rigorous methods grounded in biological
+                and clinical questions.
               </p>
             </header>
 
@@ -647,25 +729,25 @@
             </header>
             <div class="news-list">
               <article class="news-item">
-                <time>June 2026</time>
+                <time datetime="2026-06">June 2026</time>
                 <p>
                   New NICHD R01 supports a longitudinal study of the maternal
                   obesity–placenta–brain axis.
                 </p>
               </article>
               <article class="news-item">
-                <time>2026</time>
+                <time datetime="2026">2026</time>
                 <p>
                   Three senior-author papers accepted at Medical Imaging with
                   Deep Learning.
                 </p>
               </article>
               <article class="news-item">
-                <time>September 2025</time>
+                <time datetime="2025-09">September 2025</time>
                 <p>NEXMII joins the NIH U54 ARISEN research network.</p>
               </article>
               <article class="news-item">
-                <time>March 2025</time>
+                <time datetime="2025-03">March 2025</time>
                 <p>
                   Mental health prediction study published in Nature Medicine
                   and featured by Georgia Public Broadcasting.
