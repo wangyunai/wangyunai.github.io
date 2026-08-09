@@ -12,6 +12,10 @@
   --line: #dce5e2;
   --sand: #fbf7ef;
   --methods-band: #f3f8f6;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+    sans-serif;
+  --font-serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype",
+    Georgia, "Times New Roman", serif;
   --frame: min(1060px, calc(100vw - 56px));
 }
 
@@ -28,7 +32,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.68;
   text-rendering: optimizeLegibility;
@@ -95,7 +99,7 @@ a:hover {
   position: relative;
   flex: 0 0 auto;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 20px;
   font-weight: 600;
 }
@@ -231,7 +235,7 @@ a:hover {
 .profile-sidebar h2 {
   margin: 0;
   color: var(--ocean);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 25px;
   font-weight: 400;
   line-height: 1.25;
@@ -388,7 +392,7 @@ a:hover {
 .hero-epigraph figcaption {
   margin-top: 5px;
   color: var(--muted);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 12px;
   font-style: italic;
   line-height: 1.55;
@@ -416,7 +420,7 @@ a:hover {
 .contact h2 {
   margin: 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-weight: 400;
 }
 
@@ -506,7 +510,7 @@ a:hover {
 
 .hero-summary {
   margin: 24px 0 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 19px;
   line-height: 1.66;
 }
@@ -546,7 +550,7 @@ a:hover {
   display: flex;
   align-items: center;
   color: var(--ocean);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 13px;
   line-height: 1.4;
 }
@@ -714,7 +718,7 @@ a:hover {
 .engagement-card h3 {
   margin: 8px 0 0;
   color: var(--ocean);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-weight: 400;
 }
 
@@ -777,7 +781,7 @@ a:hover {
 .research-number {
   padding-top: 3px;
   color: var(--coral);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 13px;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.08em;
@@ -790,7 +794,7 @@ a:hover {
 .member-item h3 {
   margin: 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-weight: 400;
 }
 
@@ -938,7 +942,7 @@ a:hover {
 
 .funding-item > p {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 16px;
   line-height: 1.5;
 }
@@ -1038,7 +1042,7 @@ a:hover {
 
 .scientific-plate-label span {
   color: var(--coral);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 12px;
   font-variant-numeric: tabular-nums;
 }
@@ -1211,7 +1215,7 @@ a:hover {
 
 .publication-marker b {
   color: var(--coral);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.06em;
@@ -1407,7 +1411,7 @@ a:hover {
 .news-item p {
   margin: 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 16px;
   line-height: 1.55;
   transition: color 180ms ease;
@@ -1467,7 +1471,7 @@ a:hover {
 }
 
 .contact-details > a {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 17px;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -1541,7 +1545,7 @@ a:hover {
 .person-sidebar-copy strong {
   display: block;
   color: var(--ocean);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 18px;
   font-weight: 400;
 }
@@ -1615,7 +1619,7 @@ a:hover {
 .person-lead h1 {
   margin: 0;
   color: var(--ocean);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: clamp(40px, 5vw, 54px);
   font-weight: 400;
   line-height: 1.12;
@@ -1625,7 +1629,7 @@ a:hover {
   max-width: 680px;
   margin: 17px 0 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 18px;
   line-height: 1.55;
 }
@@ -1645,7 +1649,7 @@ a:hover {
 .person-section h2 {
   margin: 0 0 20px;
   color: var(--ocean);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 27px;
   font-weight: 400;
 }
@@ -1680,7 +1684,7 @@ a:hover {
 .person-entry h3 {
   margin: 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 17px;
   font-weight: 400;
   line-height: 1.45;

@@ -32,7 +32,7 @@
 .person-sidebar-copy strong {
   display: block;
   color: var(--ocean);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 18px;
   font-weight: 400;
 }
@@ -106,7 +106,7 @@
 .person-lead h1 {
   margin: 0;
   color: var(--ocean);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: clamp(40px, 5vw, 54px);
   font-weight: 400;
   line-height: 1.12;
@@ -116,7 +116,7 @@
   max-width: 680px;
   margin: 17px 0 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 18px;
   line-height: 1.55;
 }
@@ -136,7 +136,7 @@
 .person-section h2 {
   margin: 0 0 20px;
   color: var(--ocean);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 27px;
   font-weight: 400;
 }
@@ -171,7 +171,7 @@
 .person-entry h3 {
   margin: 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 17px;
   font-weight: 400;
   line-height: 1.45;
