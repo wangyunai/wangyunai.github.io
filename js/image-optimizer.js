@@ -1,5 +1,5 @@
 /**
- * NEXMII Lab Website Image Optimizer
+ * Nurture Map Lab Website Image Optimizer
  * 
  * This script optimizes images by:
  * 1. Converting images to WebP format when supported
@@ -143,4 +143,4 @@ function compressImages() {
         }
     `;
     document.head.appendChild(imageStyle);
-} 
+}

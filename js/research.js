@@ -1,4 +1,4 @@
-// NEXMII Lab Research Areas
+// Nurture Map Lab Research Areas
 // Edit this file to update the research section of the website
 
 const researchAreas = [
@@ -17,4 +17,4 @@ const researchAreas = [
         title: "AI-Driven Health Informatics",
         description: "Developing advanced machine learning frameworks and digital biomarkers for mental health and cardiometabolic health assessment and intervention. We leverage multimodal data integration and personalized AI algorithms to enhance early detection and therapeutic outcomes in neurodevelopmental, behavioral health, and cardiometabolic health domains, with special focus on maternal-infant dyads and developmental trajectories."
     }
-]; 
+];

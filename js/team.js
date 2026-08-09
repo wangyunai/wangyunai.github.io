@@ -1,4 +1,4 @@
-// NEXMII Lab Team Members
+// Nurture Map Lab Team Members
 // Edit this file to update the team section of the website
 
 const labTeam = {
@@ -61,4 +61,4 @@ const labTeam = {
         //     graduationYear: "2023"
         // }
     ]
-}; 
+};

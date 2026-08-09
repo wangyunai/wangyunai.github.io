@@ -1,4 +1,4 @@
-// NEXMII Lab Innovations & Technologies
+// Nurture Map Lab Innovations & Technologies
 // Edit this file to update the innovations section of the website
 
 const labInnovations = [
@@ -42,4 +42,4 @@ const labInnovations = [
         year: "2025",
         status: "Released"
     }
-]; 
+];

@@ -1,4 +1,4 @@
-// NEXMII Lab Publications
+// Nurture Map Lab Publications
 // Edit this file to update the publications section of the website
 // Add new publications at the top of the array for each year
 
@@ -91,4 +91,4 @@ const labPublications = {
             pdf: null
         }
     ]
-}; 
+};

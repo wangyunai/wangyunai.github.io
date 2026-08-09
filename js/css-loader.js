@@ -1,5 +1,5 @@
 /**
- * NEXMII Lab Website CSS Loader
+ * Nurture Map Lab Website CSS Loader
  * 
  * This script optimizes CSS loading by:
  * 1. Loading critical CSS first
@@ -263,4 +263,4 @@ function optimizePaint() {
         }
     `;
     document.head.appendChild(animationStyle);
-} 
+}

@@ -1,4 +1,4 @@
-// NEXMII Lab Research Resources
+// Nurture Map Lab Research Resources
 // Edit this file to update the resources section of the website
 // Add new resources at the beginning of the array to highlight recent releases
 
@@ -38,4 +38,3 @@ function filterResourcesByYear(year) {
 }
 
 function filterResourcesByTag(tag) {
- 

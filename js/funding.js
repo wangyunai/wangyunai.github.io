@@ -1,4 +1,4 @@
-// NEXMII Lab Funding Information
+// Nurture Map Lab Funding Information
 // Edit this file to update the funding section of the website
 
 const labFunding = [
@@ -29,4 +29,4 @@ const labFunding = [
         description: "The proposed project builds on an existing cohort (funded by NIMH) and leverages longitudinal assessment of maternal depression and family environment to investigate the impact of prenatal SSRI exposure on early brain development and behavioral outcomes.",
         amount: "2022-2025"
     }
-]; 
+];

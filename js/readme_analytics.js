@@ -1,5 +1,5 @@
 /*
-NEXMII Lab Website - Google Analytics Setup Guide
+Nurture Map Lab Website - Google Analytics Setup Guide
 
 To complete the Google Analytics integration:
 
@@ -7,7 +7,7 @@ To complete the Google Analytics integration:
    - Go to: https://analytics.google.com/
    - Sign in with your Google account
    - Click "Admin" (gear icon) in the bottom left
-   - Create a new property for "NEXMII Lab Website"
+   - Create a new property for "Nurture Map Lab Website"
    - Complete the setup wizard and get your Measurement ID (G-XXXXXXXXXX format)
 
 2. Replace the placeholder in index.html:
@@ -32,4 +32,4 @@ For additional tracking needs, use the trackClick() function:
 trackClick(category, action, label)
 
 Example: trackClick('Downloads', 'PDF', 'Research Paper')
-*/ 
+*/

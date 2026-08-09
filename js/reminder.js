@@ -4,7 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Check if user is admin (you need to set this when you log in)
-    const isAdmin = localStorage.getItem('isNexmiiAdmin') === 'true';
+    const isAdmin = localStorage.getItem('isNurtureMapAdmin') === 'true';
     
     if (isAdmin) {
         checkIfLastSundayOfMonth();
@@ -60,4 +60,4 @@ function showUpdateReminder() {
 
 // Set admin flag (for testing - you would set this when logging in)
 // Uncomment the line below to test the reminder
-// localStorage.setItem('isNexmiiAdmin', 'true'); 
+// localStorage.setItem('isNurtureMapAdmin', 'true');

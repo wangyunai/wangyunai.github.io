@@ -1,12 +1,12 @@
 /**
- * NEXMII Lab Website Performance Optimization Script
+ * Nurture Map Lab Website Performance Optimization Script
  * Handles preloading, lazy image loading, and performance improvements
  */
 
 // Global loading status tracker
 let resourcesLoaded = 0;
 let totalResources = 0;
-const criticalResources = ['css/style.css', 'css/preloader.css', 'js/main.js', 'images/nexmii_logo.png'];
+const criticalResources = ['css/style.css', 'css/preloader.css', 'js/main.js', 'images/brand-mark.png'];
 const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'];
 
 // DOM elements (will be set after DOM is loaded)
@@ -138,7 +138,7 @@ function updatePreloaderProgress(progress) {
         } else if (progress < 100) {
             loadingText.textContent = 'Almost ready...';
         } else {
-            loadingText.textContent = 'Welcome to NEXMII Lab!';
+            loadingText.textContent = 'Welcome to Nurture Map Lab!';
         }
     }
 }
@@ -172,7 +172,7 @@ function hidePreloader() {
 function setupLazyLoading() {
     // Don't lazy load logo and domain icons - critical for initial view
     const criticalImages = [
-        'images/nexmii_logo.png',
+        'images/brand-mark.png',
         'images/yun_wang.png'
     ];
     
@@ -302,4 +302,4 @@ function debounce(func, wait) {
         clearTimeout(timeout);
         timeout = setTimeout(() => func.apply(context, args), wait);
     };
-} 
+}
