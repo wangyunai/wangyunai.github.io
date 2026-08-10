@@ -15,14 +15,14 @@
       content="yHnQfGtxYITrz_1wQaYFI2cyAWuikGDwt81frJaCdhA"
     />
     <link rel="canonical" href="https://wangyunai.github.io/" />
-    <link rel="icon" href="/images/brand-mark.png" />
+    <link rel="icon" href="images/brand-mark.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&amp;family=Source+Serif+4:opsz,wght@8..60,400..600&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/site.css?v=20260809-type" />
+    <link rel="stylesheet" href="css/site.css?v=20260810-sprite" />
 
     <meta
       property="og:title"
@@ -151,63 +151,22 @@
       </div>
     </header>
 
-    <div class="site-frame academic-shell">
-      <aside class="profile-sidebar" aria-label="Laboratory profile">
-        <h2>Nurture Map Lab</h2>
-        <p class="sidebar-long-name">
-          Maternal–Infant Imaging, AI &amp; Neurodevelopment
-        </p>
-
-        <div class="sidebar-group">
-          <strong>
-            <a href="/people/yun-wang/">Yun Wang, Ph.D.</a>
-          </strong>
-          <p>
-            Assistant Professor<br />
-            Biomedical Informatics
-          </p>
-        </div>
-
-        <div class="sidebar-group">
-          <p>
-            Emory University<br />
-            School of Medicine<br />
-            Atlanta, Georgia
-          </p>
-        </div>
-
-        <nav class="sidebar-links" aria-label="Contact and profiles">
-          <a href="/people/yun-wang/">PI profile</a>
-          <a href="mailto:yun.wang2@emory.edu">Email</a>
-          <a
-            href="https://orcid.org/0000-0003-2426-2876"
-            target="_blank"
-            rel="noreferrer"
-          >
-            ORCID
-          </a>
-        </nav>
-      </aside>
-
-      <main id="main-content" class="content-column">
+    <div class="narrative-shell">
+      <main id="main-content">
         <section class="hero" id="home">
           <div class="site-frame hero-layout">
             <div class="hero-copy">
               <p class="hero-kicker">
-                Maternal–Infant Imaging, AI &amp; Neurodevelopment · Emory
-                University School of Medicine
+                Maternal–Infant Imaging, AI &amp; Neurodevelopment
               </p>
-              <h1>Mapping early-life development from placenta to brain.</h1>
+              <h1>
+                Tracing the pathways from maternal health to the developing
+                brain.
+              </h1>
               <p class="hero-summary">
                 We develop interpretable AI and multimodal MRI methods to study
                 how maternal conditions shape placental function, fetal
                 circulation, infant brain development, and neurobehavior.
-              </p>
-              <p class="hero-detail">
-                By combining imaging, machine learning, multi-omics, and
-                longitudinal behavioral data, we build measurable phenotypes
-                and identify potentially modifiable pathways for earlier
-                intervention.
               </p>
               <nav class="hero-actions" aria-label="Introduction">
                 <a class="button-link" href="#research">
@@ -217,28 +176,37 @@
                   Participate in a study <span aria-hidden="true">→</span>
                 </a>
               </nav>
-              <div
-                class="research-continuum"
-                aria-label="Research continuum from maternal context to early neurobehavior"
-              >
-                <p>Research continuum</p>
-                <ol>
-                  <li>Maternal context</li>
-                  <li>Placenta</li>
-                  <li>Fetal circulation</li>
-                  <li>Developing brain</li>
-                  <li>Early neurobehavior</li>
-                </ol>
-              </div>
             </div>
             <div class="hero-visual">
-              <figure class="hero-sketch">
-                <img
-                  src="images/mother-infant-sketch.webp"
-                  alt="Watercolor line drawing of a mother cradling her infant"
-                  width="720"
-                  height="1080"
-                />
+              <figure
+                class="hero-sketch hero-life-cycle"
+                role="img"
+                aria-label="Watercolor sequence showing pregnancy, infancy, and a young child in motion"
+              >
+                <span
+                  class="hero-life-stage hero-life-stage-pregnancy"
+                  aria-hidden="true"
+                >
+                  <span
+                    class="hero-life-sprite hero-life-sprite-pregnancy"
+                  ></span>
+                </span>
+                <span
+                  class="hero-life-stage hero-life-stage-infant"
+                  aria-hidden="true"
+                >
+                  <span
+                    class="hero-life-sprite hero-life-sprite-infant"
+                  ></span>
+                </span>
+                <span
+                  class="hero-life-stage hero-life-stage-child"
+                  aria-hidden="true"
+                >
+                  <span
+                    class="hero-life-sprite hero-life-sprite-child"
+                  ></span>
+                </span>
               </figure>
               <figure class="hero-epigraph" aria-label="Guiding passage">
                 <blockquote lang="zh-Hans">
@@ -249,6 +217,141 @@
                   <span>Life is a continuous process of becoming.</span>
                 </figcaption>
               </figure>
+            </div>
+          </div>
+
+          <section
+            class="site-frame nurture-path"
+            aria-labelledby="nurture-path-title"
+          >
+            <header class="nurture-path-intro">
+              <p>The Nurture Map</p>
+              <h2 id="nurture-path-title">
+                One connected developmental story.
+              </h2>
+            </header>
+            <ol>
+              <li>
+                <span class="path-point" aria-hidden="true">01</span>
+                <strong>Maternal context</strong>
+                <small>Health · metabolism · environment</small>
+              </li>
+              <li>
+                <span class="path-point" aria-hidden="true">02</span>
+                <strong>Placenta</strong>
+                <small>Exchange · function · signaling</small>
+              </li>
+              <li>
+                <span class="path-point" aria-hidden="true">03</span>
+                <strong>Fetal circulation</strong>
+                <small>Flow · hemodynamics · oxygen delivery</small>
+              </li>
+              <li>
+                <span class="path-point" aria-hidden="true">04</span>
+                <strong>Developing brain</strong>
+                <small>Structure · connectivity · growth</small>
+              </li>
+              <li>
+                <span class="path-point" aria-hidden="true">05</span>
+                <strong>Early neurobehavior</strong>
+                <small>Regulation · attention · communication</small>
+              </li>
+            </ol>
+          </section>
+        </section>
+
+        <aside
+          class="site-frame lab-identity-bar"
+          aria-label="Laboratory profile"
+        >
+          <div class="lab-identity-copy">
+            <span>Led by</span>
+            <strong>
+              <a href="people/yun-wang/">Yun Wang, Ph.D.</a>
+            </strong>
+            <small>Assistant Professor of Biomedical Informatics</small>
+          </div>
+          <div class="lab-identity-copy">
+            <span>Based at</span>
+            <strong>Emory University School of Medicine</strong>
+            <small>Atlanta, Georgia</small>
+          </div>
+          <div class="lab-evidence" aria-label="Laboratory activity">
+            <span><b>4</b> active NIH awards</span>
+            <span><b>32</b> peer-reviewed publications</span>
+          </div>
+          <nav class="lab-identity-links" aria-label="Contact and profiles">
+            <a href="people/yun-wang/">PI profile</a>
+            <a href="mailto:yun.wang2@emory.edu">Email</a>
+            <a
+              href="https://orcid.org/0000-0003-2426-2876"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ORCID
+            </a>
+          </nav>
+        </aside>
+
+        <section
+          class="latest-strip"
+          id="latest"
+          aria-labelledby="latest-title"
+        >
+          <div class="site-frame latest-layout">
+            <header class="latest-heading">
+              <p>Latest</p>
+              <h2 id="latest-title">Recent activity</h2>
+            </header>
+            <div class="latest-list">
+              <article class="latest-item">
+                <div class="latest-meta">
+                  <span>Grant</span>
+                  <time datetime="2026-06">June 2026</time>
+                </div>
+                <h3>
+                  <a
+                    href="https://reporter.nih.gov/project-details/11342946"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    New NICHD R01 supports a longitudinal study of the maternal
+                    obesity–placenta–brain axis.
+                  </a>
+                </h3>
+              </article>
+              <article class="latest-item">
+                <div class="latest-meta">
+                  <span>Papers</span>
+                  <time datetime="2026">2026</time>
+                </div>
+                <h3>
+                  <a
+                    href="https://proceedings.mlr.press/v315/liu26b.html"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Three senior-author papers accepted at Medical Imaging with
+                    Deep Learning.
+                  </a>
+                </h3>
+              </article>
+              <article class="latest-item">
+                <div class="latest-meta">
+                  <span>Media</span>
+                  <time datetime="2025-03">March 2025</time>
+                </div>
+                <h3>
+                  <a
+                    href="https://www.gpb.org/news/2025/03/20/emory-researcher-uses-artificial-intelligence-predict-youth-mental-health-risks"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Mental health prediction study published in Nature Medicine
+                    and featured by Georgia Public Broadcasting.
+                  </a>
+                </h3>
+              </article>
             </div>
           </div>
         </section>
@@ -335,6 +438,12 @@
               <p>
                 Our program is supported by four active NIH awards and has
                 contributed to 32 peer-reviewed publications.
+              </p>
+              <p>
+                By combining imaging, machine learning, multi-omics, and
+                longitudinal behavioral data, we build measurable phenotypes
+                and identify potentially modifiable pathways for earlier
+                intervention.
               </p>
             </header>
 
@@ -1055,10 +1164,10 @@
           </div>
         </section>
 
-        <section class="section" id="news">
+        <section class="section news-section" id="news">
           <div class="site-frame">
             <header class="section-heading compact-heading">
-              <h2>News</h2>
+              <h2>News archive</h2>
             </header>
             <div class="news-list">
               <article class="news-item">
@@ -1172,5 +1281,6 @@
         <span>Maternal–Infant Imaging, AI &amp; Neurodevelopment</span>
       </div>
     </footer>
+    <script src="/js/site.js" defer></script>
   </body>
 </html>
