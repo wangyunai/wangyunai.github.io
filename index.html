@@ -179,8 +179,8 @@
                 development, and early neurobehavior.
               </p>
               <nav class="hero-actions" aria-label="Introduction">
-                <a class="button-link" href="#research">
-                  Explore our research
+                <a class="button-link" href="#nurture-path-title">
+                  Explore the Nurture Map
                 </a>
                 <a class="text-arrow-link" href="#participate">
                   Participate in a study <span aria-hidden="true">→</span>
@@ -275,34 +275,105 @@
               <h2 id="nurture-path-title">
                 One connected developmental story.
               </h2>
+              <span>
+                Choose a stage to follow what we measure and why it matters.
+              </span>
             </header>
-            <ol>
-              <li>
-                <span class="path-point" aria-hidden="true">01</span>
-                <strong>Maternal context</strong>
-                <small>Health · metabolism · environment</small>
-              </li>
-              <li>
-                <span class="path-point" aria-hidden="true">02</span>
-                <strong>Placenta</strong>
-                <small>Exchange · function · signaling</small>
-              </li>
-              <li>
-                <span class="path-point" aria-hidden="true">03</span>
-                <strong>Fetal circulation</strong>
-                <small>Flow · hemodynamics · oxygen delivery</small>
-              </li>
-              <li>
-                <span class="path-point" aria-hidden="true">04</span>
-                <strong>Developing brain</strong>
-                <small>Structure · connectivity · growth</small>
-              </li>
-              <li>
-                <span class="path-point" aria-hidden="true">05</span>
-                <strong>Early neurobehavior</strong>
-                <small>Regulation · attention · communication</small>
-              </li>
-            </ol>
+            <div class="nurture-path-explorer">
+              <ol>
+                <li>
+                  <button
+                    class="nurture-stage-button"
+                    type="button"
+                    aria-controls="nurture-stage-detail"
+                    aria-pressed="true"
+                    data-stage="0"
+                  >
+                    <span class="path-point" aria-hidden="true">01</span>
+                    <strong>Maternal context</strong>
+                    <small>Health · metabolism · environment</small>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="nurture-stage-button"
+                    type="button"
+                    aria-controls="nurture-stage-detail"
+                    aria-pressed="false"
+                    data-stage="1"
+                  >
+                    <span class="path-point" aria-hidden="true">02</span>
+                    <strong>Placenta</strong>
+                    <small>Exchange · function · signaling</small>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="nurture-stage-button"
+                    type="button"
+                    aria-controls="nurture-stage-detail"
+                    aria-pressed="false"
+                    data-stage="2"
+                  >
+                    <span class="path-point" aria-hidden="true">03</span>
+                    <strong>Fetal circulation</strong>
+                    <small>Flow · hemodynamics · oxygen delivery</small>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="nurture-stage-button"
+                    type="button"
+                    aria-controls="nurture-stage-detail"
+                    aria-pressed="false"
+                    data-stage="3"
+                  >
+                    <span class="path-point" aria-hidden="true">04</span>
+                    <strong>Developing brain</strong>
+                    <small>Structure · connectivity · growth</small>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="nurture-stage-button"
+                    type="button"
+                    aria-controls="nurture-stage-detail"
+                    aria-pressed="false"
+                    data-stage="4"
+                  >
+                    <span class="path-point" aria-hidden="true">05</span>
+                    <strong>Early neurobehavior</strong>
+                    <small>Regulation · attention · communication</small>
+                  </button>
+                </li>
+              </ol>
+              <div
+                class="nurture-path-detail"
+                id="nurture-stage-detail"
+                aria-live="polite"
+              >
+                <p class="nurture-detail-stage">01 · Maternal context</p>
+                <dl>
+                  <div>
+                    <dt>What we measure</dt>
+                    <dd class="nurture-detail-measure">
+                      Maternal metabolic, inflammatory, environmental, and
+                      psychosocial context.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Why it matters</dt>
+                    <dd class="nurture-detail-meaning">
+                      These are potentially modifiable influences that begin
+                      the developmental pathway.
+                    </dd>
+                  </div>
+                </dl>
+                <a class="text-arrow-link" href="#research">
+                  See related research <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
           </section>
         </section>
 
@@ -495,54 +566,138 @@
             </header>
 
             <div class="research-list">
-              <article class="research-item">
-                <span class="research-number" aria-hidden="true">01</span>
-                <div>
-                  <h3>AI Methods for Perinatal Imaging Phenotypes</h3>
-                  <p>
+              <details class="research-item" open>
+                <summary>
+                  <span class="research-number" aria-hidden="true">01</span>
+                  <span class="research-summary-copy">
+                    <h3>AI Methods for Perinatal Imaging Phenotypes</h3>
+                    <small>
+                      Self-supervised learning · Domain adaptation · Foundation
+                      models
+                    </small>
+                  </span>
+                  <span class="research-toggle" aria-hidden="true">+</span>
+                </summary>
+                <div class="research-detail">
+                  <p class="research-description">
                     We develop learning methods for fetal, placental, newborn,
                     and infant MRI. Our work addresses motion, changing anatomy,
                     variable contrast, scanner differences, and limited labels
                     to produce interpretable developmental phenotypes.
                   </p>
-                  <small>
-                    Self-supervised learning · Domain adaptation · Foundation
-                    models
-                  </small>
+                  <dl class="research-facts">
+                    <div>
+                      <dt>Core question</dt>
+                      <dd>
+                        How can we recover reliable phenotypes from moving,
+                        rapidly changing anatomy and limited labels?
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>Current work</dt>
+                      <dd>
+                        Motion-robust fetal, placental, newborn, and infant MRI
+                        across heterogeneous scanners.
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>Why it matters</dt>
+                      <dd>
+                        Interpretable and reproducible measurements that can
+                        travel across studies and clinical settings.
+                      </dd>
+                    </div>
+                  </dl>
                 </div>
-              </article>
+              </details>
 
-              <article class="research-item">
-                <span class="research-number" aria-hidden="true">02</span>
-                <div>
-                  <h3>Placental and Fetal-Circulatory Pathways</h3>
-                  <p>
+              <details class="research-item">
+                <summary>
+                  <span class="research-number" aria-hidden="true">02</span>
+                  <span class="research-summary-copy">
+                    <h3>Placental and Fetal-Circulatory Pathways</h3>
+                    <small>
+                      Placental MRI · Fetal circulation · Multi-omics
+                    </small>
+                  </span>
+                  <span class="research-toggle" aria-hidden="true">+</span>
+                </summary>
+                <div class="research-detail">
+                  <p class="research-description">
                     We study how maternal metabolism, inflammation, stress,
                     medications, and environmental context shape placental
                     function, fetal hemodynamics, oxygen delivery, and early
                     brain development.
                   </p>
-                  <small>
-                    Placental MRI · Fetal circulation · Multi-omics
-                  </small>
+                  <dl class="research-facts">
+                    <div>
+                      <dt>Core question</dt>
+                      <dd>
+                        Where does risk emerge along the
+                        maternal–placental–fetal pathway?
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>Current work</dt>
+                      <dd>
+                        Longitudinal MRI and multi-omics across pregnancy and
+                        infancy in two NIH-funded studies.
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>Why it matters</dt>
+                      <dd>
+                        Potentially modifiable biological pathways before
+                        developmental differences become established.
+                      </dd>
+                    </div>
+                  </dl>
                 </div>
-              </article>
+              </details>
 
-              <article class="research-item">
-                <span class="research-number" aria-hidden="true">03</span>
-                <div>
-                  <h3>From Perinatal Phenotypes to Neurobehavioral Risk</h3>
-                  <p>
+              <details class="research-item">
+                <summary>
+                  <span class="research-number" aria-hidden="true">03</span>
+                  <span class="research-summary-copy">
+                    <h3>From Perinatal Phenotypes to Neurobehavioral Risk</h3>
+                    <small>
+                      Longitudinal outcomes · Early behavior · Prevention
+                    </small>
+                  </span>
+                  <span class="research-toggle" aria-hidden="true">+</span>
+                </summary>
+                <div class="research-detail">
+                  <p class="research-description">
                     We connect perinatal imaging phenotypes with regulation,
                     attention, social communication, NICU course, and early
                     psychopathology risk, with an emphasis on modifiable
                     pathways and early prevention.
                   </p>
-                  <small>
-                    Longitudinal outcomes · Early behavior · Prevention
-                  </small>
+                  <dl class="research-facts">
+                    <div>
+                      <dt>Core question</dt>
+                      <dd>
+                        Which perinatal phenotypes signal later neurobehavioral
+                        risk or resilience?
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>Current work</dt>
+                      <dd>
+                        Linking imaging with regulation, attention,
+                        communication, NICU course, and early psychopathology.
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>Why it matters</dt>
+                      <dd>
+                        Earlier risk stratification and prevention grounded in
+                        measurable developmental pathways.
+                      </dd>
+                    </div>
+                  </dl>
                 </div>
-              </article>
+              </details>
             </div>
 
             <article
