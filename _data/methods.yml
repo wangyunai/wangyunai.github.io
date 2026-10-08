@@ -1,0 +1,40 @@
+# Methods & software. Each link needs a label and url.
+
+- tag: Platform · 2022
+  name: FINNEAS
+  text: Privacy-preserving, cloud-based infant MRI analysis that needs no programming.
+  links:
+    - { label: Platform, url: "https://www.finneas.ai/" }
+
+- tag: CVPR 2024
+  name: MAPSeg
+  text: Unified domain adaptation for heterogeneous 3D medical image segmentation.
+  links:
+    - { label: Paper, url: "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_MAPSeg_Unified_Unsupervised_Domain_Adaptation_for_Heterogeneous_Medical_Image_Segmentation_CVPR_2024_paper.html" }
+    - { label: Code, url: "https://github.com/XuzheZ/MAPSeg" }
+
+- tag: MIDL 2026
+  name: NeuroLangSeg
+  text: Language-guided subcortical segmentation with anatomical–linguistic validation.
+  links:
+    - { label: Paper, url: "https://proceedings.mlr.press/v315/liu26b.html" }
+    - { label: Code, url: "https://github.com/jlliu2001/SAT_MPL" }
+
+- tag: MIDL 2026
+  name: Fetal MRI super-resolution
+  text: Orientation-aware diffusion models that recover 3T-like detail from routine 1.5T scans.
+  links:
+    - { label: Paper, url: "https://proceedings.mlr.press/v315/zhong26a.html" }
+
+- tag: MICCAI PIPPI 2025
+  name: Placental MRI phenotyping
+  text: Contrast-invariant self-supervised segmentation for reproducible placental measurement.
+  links:
+    - { label: Paper, url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12498333/" }
+
+- tag: IEEE TMI 2022
+  name: PTNet3D
+  text: A 3D transformer for high-resolution longitudinal infant brain MRI synthesis.
+  links:
+    - { label: Paper, url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9529847/" }
+    - { label: Code, url: "https://github.com/XuzheZ/PTNet3D" }

@@ -1,0 +1,67 @@
+<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "{{ '/' | absolute_url }}#website",
+            "url": "{{ '/' | absolute_url }}",
+            "name": "{{ site.title }}",
+            "description": {{ site.description | strip_newlines | strip | jsonify }},
+            "inLanguage": "en",
+            "publisher": { "@id": "{{ '/' | absolute_url }}#lab" }
+          },
+          {
+            "@type": "ResearchOrganization",
+            "@id": "{{ '/' | absolute_url }}#lab",
+            "name": "{{ site.title }}",
+            "slogan": "Maternal–Infant Imaging, AI & Neurodevelopment",
+            "url": "{{ '/' | absolute_url }}",
+            "logo": "{{ '/images/brand-mark.png' | absolute_url }}",
+            "email": "{{ site.data.lab.email }}",
+            "parentOrganization": {
+              "@type": "CollegeOrUniversity",
+              "name": "Emory University",
+              "url": "https://www.emory.edu/"
+            },
+            "member": { "@id": "{{ '/people/yun-wang/' | absolute_url }}#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "{{ '/people/yun-wang/' | absolute_url }}#person",
+            "name": "Yun Wang",
+            "honorificSuffix": "PhD",
+            "url": "{{ '/people/yun-wang/' | absolute_url }}",
+            {%- if site.data.people.pi.photo != "" %}
+            "image": "{{ site.data.people.pi.photo | absolute_url }}",
+            {%- endif %}
+            "jobTitle": "Assistant Professor of Biomedical Informatics",
+            "worksFor": { "@id": "{{ '/' | absolute_url }}#lab" },
+            "affiliation": {
+              "@type": "CollegeOrUniversity",
+              "name": "Emory University",
+              "url": "https://www.emory.edu/"
+            },
+            "sameAs": [
+              {%- assign links = site.data.lab.links -%}
+              {%- assign same = "" | split: "" -%}
+              {%- assign keys = "emory,orcid,scholar,github,linkedin" | split: "," -%}
+              {%- for key in keys -%}
+                {%- if links[key] != "" -%}{%- assign same = same | push: links[key] -%}{%- endif -%}
+              {%- endfor -%}
+              {%- for u in same %}
+              "{{ u }}"{% unless forloop.last %},{% endunless %}
+              {%- endfor %}
+            ],
+            "knowsAbout": [
+              "Artificial intelligence for medical imaging",
+              "Quantitative magnetic resonance imaging",
+              "Maternal–fetal imaging",
+              "Placental and fetal physiology",
+              "Infant brain development",
+              "Biomedical informatics"
+            ]
+          }
+        ]
+      }
+    </script>

@@ -1,0 +1,56 @@
+# Selected publications, newest first. Lab members (people.yml → lab_authors)
+# are bolded automatically. "profile: true" also lists it on the PI page.
+
+- year: 2026
+  title: "NeuroLangSeg: Language-Guided Subcortical Segmentation with Pseudo-Supervision and Anatomical–Linguistic Validation"
+  authors: Liu, R., Liu, J., Zhang, X., Huang, C., & Wang, Y.
+  venue: Medical Imaging with Deep Learning
+  url: https://proceedings.mlr.press/v315/liu26b.html
+  profile: true
+
+- year: 2026
+  title: Orientation-Aware Diffusion Super-Resolution for 3T-Like Fetal MRI from Routine 1.5T Scans
+  authors: Zhong, X., Liu, R., Lin, G., Huang, C., Goldman-Yassen, A., Mehollin-Ray, A., & Wang, Y.
+  venue: Medical Imaging with Deep Learning
+  url: https://proceedings.mlr.press/v315/zhong26a.html
+  profile: true
+
+- year: 2026
+  title: A Two-Stage Multi-Modal MRI Framework for Lifespan Brain Age Prediction
+  authors: Zhang, D., et al., & Wang, Y.
+  venue: Medical Imaging with Deep Learning (short paper)
+  url: https://openreview.net/forum?id=YWDQpIgWFK
+
+- year: 2025
+  title: Contrast-Invariant Self-supervised Segmentation for Quantitative Placental MRI
+  authors: Zhong, X., Liu, R., Nichols, E. S., Zhang, X., Laine, A. F., Duerden, E. G., & Wang, Y.
+  venue: MICCAI PIPPI
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12498333/
+
+- year: 2025
+  title: Prediction of Mental Health Risk in Adolescents
+  authors: Hill, E. D., Kashyap, P., Raffanello, E., Wang, Y., Moffitt, T. E., Caspi, A., et al.
+  venue: Nature Medicine
+  url: https://doi.org/10.1038/s41591-025-03560-7
+  profile: true
+
+- year: 2024
+  title: "MAPSeg: Unified Unsupervised Domain Adaptation for Heterogeneous Medical Image Segmentation"
+  authors: Zhang, X., Wu, Y., Angelini, E., Li, A., Guo, J., Rasmussen, J. M., O’Connor, T. G., Wang, Y., et al.
+  venue: CVPR
+  url: https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_MAPSeg_Unified_Unsupervised_Domain_Adaptation_for_Heterogeneous_Medical_Image_Segmentation_CVPR_2024_paper.html
+  profile: true
+
+- year: 2024
+  title: Segmenting Hypothalamic Subunits in Human Newborn Magnetic Resonance Imaging Data
+  authors: Rasmussen, J. M., Wang, Y., Graham, A. M., Fair, D. A., Posner, J., O’Connor, T. G., et al.
+  venue: Human Brain Mapping
+  url: https://doi.org/10.1002/hbm.26582
+  profile: true
+
+- year: 2019
+  title: The Association Between Antidepressant Treatment and Brain Connectivity in Two Double-Blind, Placebo-Controlled Clinical Trials
+  authors: Wang, Y., Bernanke, J., Peterson, B. S., McGrath, P., Stewart, J., Chen, Y., et al.
+  venue: The Lancet Psychiatry
+  url: https://doi.org/10.1016/S2215-0366(19)30179-8
+  profile: true

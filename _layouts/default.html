@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {%- if page.title %}
+    {%- assign full_title = page.title | append: " | " | append: site.title %}
+    {%- else %}
+    {%- assign full_title = site.title | append: " | AI & Quantitative MRI for Maternal–Infant Health" %}
+    {%- endif %}
+    {%- assign desc = page.description | default: site.description | strip_newlines | strip %}
+    <title>{{ full_title | escape }}</title>
+    <meta name="description" content="{{ desc | escape }}" />
+    <meta name="author" content="Yun Wang, PhD" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    <link rel="icon" href="/images/brand-mark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&amp;family=Instrument+Sans:wght@400..600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" />
+    <link rel="stylesheet" href="/assets/css/main.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:title" content="{{ full_title | escape }}" />
+    <meta property="og:description" content="{{ desc | escape }}" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:image" content="{{ site.og_image | absolute_url }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Nurture Map Lab — tracing pathways from maternal health to the developing brain" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ full_title | escape }}" />
+    <meta name="twitter:description" content="{{ desc | escape }}" />
+    <meta name="twitter:image" content="{{ site.og_image | absolute_url }}" />
+    {%- if page.jsonld %}
+    {% include jsonld.html %}
+    {%- endif %}
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}', {
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {% include header.html %}
+    <main id="main">
+{{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
