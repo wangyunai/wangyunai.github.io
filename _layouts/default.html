@@ -65,14 +65,18 @@
     <script>
       (function () {
         if (!document.documentElement.classList.contains("motion")) return;
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add("is-playing");
-            io.unobserve(entry.target);
-          });
-        }, { threshold: 0.2 });
-        document.querySelectorAll("[data-play]").forEach(function (el) { io.observe(el); });
+        // data-play="0.6" = start once 60% of the element is on screen (default 20%)
+        document.querySelectorAll("[data-play]").forEach(function (el) {
+          var t = parseFloat(el.getAttribute("data-play")) || 0.2;
+          var io = new IntersectionObserver(function (entries, obs) {
+            entries.forEach(function (entry) {
+              if (entry.intersectionRatio < t - 0.001) return;
+              entry.target.classList.add("is-playing");
+              obs.unobserve(entry.target);
+            });
+          }, { threshold: t });
+          io.observe(el);
+        });
       })();
     </script>
   </body>

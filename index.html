@@ -7,17 +7,27 @@ jsonld: true
 
 <section id="top" aria-labelledby="hero-title">
   <div class="wrap hero-top">
-    <div class="hero-title">
+    <div class="hero-copy">
       <p class="kicker">Maternal–infant imaging · AI · Neurodevelopment</p>
-      <h1 id="hero-title">Mapping how a mother’s health shapes the developing brain.</h1>
-    </div>
-    <div class="hero-side">
-      <p>We build AI and quantitative MRI methods that follow one connected pathway, from maternal health through the placenta and fetal circulation to infant brain development and early behavior.</p>
+      <h1 id="hero-title">Tracing the pathways from maternal health to the developing brain.</h1>
+      <p class="hero-lead">We develop AI and quantitative MRI methods to map how maternal health shapes placental function, fetal physiology, brain development, and early neurobehavior.</p>
       <div class="actions">
         <a class="btn" href="#research">Explore our research</a>
         <a class="text-link" href="mailto:{{ lab.email }}?subject=Collaboration%20inquiry">Collaborate with us</a>
       </div>
     </div>
+    <figure class="life-cycle" data-play="0.6" role="img" aria-label="Watercolor sequence: a pregnant mother, a mother holding her baby, and a young child running">
+      <svg class="growth-path" viewBox="0 0 320 480" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path class="growth-wash" d="M 45 390 C 52 310, 119 292, 146 238 S 221 173, 276 90" pathLength="1"></path>
+        <path class="growth-line" d="M 45 390 C 52 310, 119 292, 146 238 S 221 173, 276 90" pathLength="1"></path>
+        <circle class="milestone milestone-pregnancy" cx="45" cy="390" r="4.5"></circle>
+        <circle class="milestone milestone-infant" cx="146" cy="238" r="4.5"></circle>
+        <circle class="milestone milestone-child" cx="276" cy="90" r="4.5"></circle>
+      </svg>
+      <span class="life-stage life-stage-pregnancy" aria-hidden="true"><span class="life-sprite life-sprite-pregnancy"></span></span>
+      <span class="life-stage life-stage-infant" aria-hidden="true"><span class="life-sprite life-sprite-infant"></span></span>
+      <span class="life-stage life-stage-child" aria-hidden="true"><span class="life-sprite life-sprite-child"></span></span>
+    </figure>
   </div>
 
   <div class="wrap map" id="map">
