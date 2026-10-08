@@ -17,7 +17,7 @@ stats:
   - value: K99/R00
     label: NIH Pathway to Independence Award, NICHD
   - value: 2 R01s
-    label: NIH R01s as principal investigator, among 4 active NIH awards
+    label: As principal investigator, among 4 active NIH awards
   - value: 30+
     label: Peer-reviewed publications in imaging, AI, and mental health
   - value: "9"

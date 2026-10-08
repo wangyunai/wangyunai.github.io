@@ -17,8 +17,8 @@
 
 - year: 2026
   title: A Two-Stage Multi-Modal MRI Framework for Lifespan Brain Age Prediction
-  authors: Zhang, D., et al., & Wang, Y.
-  venue: Medical Imaging with Deep Learning (short paper)
+  authors: Zhang, D., Liu, R., & Wang, Y.
+  venue: Medical Imaging with Deep Learning
   url: https://openreview.net/forum?id=YWDQpIgWFK
 
 - year: 2025
@@ -29,14 +29,14 @@
 
 - year: 2025
   title: Prediction of Mental Health Risk in Adolescents
-  authors: Hill, E. D., Kashyap, P., Raffanello, E., Wang, Y., Moffitt, T. E., Caspi, A., et al.
+  authors: Hill, E. D., Kashyap, P., Raffanello, E., Wang, Y., Moffitt, T. E., Caspi, A., Engelhard, M., & Posner, J.
   venue: Nature Medicine
   url: https://doi.org/10.1038/s41591-025-03560-7
   profile: true
 
 - year: 2024
-  title: "MAPSeg: Unified Unsupervised Domain Adaptation for Heterogeneous Medical Image Segmentation"
-  authors: Zhang, X., Wu, Y., Angelini, E., Li, A., Guo, J., Rasmussen, J. M., O’Connor, T. G., Wang, Y., et al.
+  title: "MAPSeg: Unified Unsupervised Domain Adaptation for Heterogeneous Medical Image Segmentation Based on 3D Masked Autoencoding and Pseudo-Labeling"
+  authors: Zhang, X., Wu, Y., Angelini, E., Li, A., Guo, J., Rasmussen, J. M., O’Connor, T. G., Wadhwa, P. D., Jackowski, A. P., Li, H., Posner, J., Laine, A. F., & Wang, Y.
   venue: CVPR
   url: https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_MAPSeg_Unified_Unsupervised_Domain_Adaptation_for_Heterogeneous_Medical_Image_Segmentation_CVPR_2024_paper.html
   profile: true
@@ -49,7 +49,7 @@
   profile: true
 
 - year: 2019
-  title: The Association Between Antidepressant Treatment and Brain Connectivity in Two Double-Blind, Placebo-Controlled Clinical Trials
+  title: "The Association Between Antidepressant Treatment and Brain Connectivity in Two Double-Blind, Placebo-Controlled Clinical Trials: A Treatment Mechanism Study"
   authors: Wang, Y., Bernanke, J., Peterson, B. S., McGrath, P., Stewart, J., Chen, Y., et al.
   venue: The Lancet Psychiatry
   url: https://doi.org/10.1016/S2215-0366(19)30179-8

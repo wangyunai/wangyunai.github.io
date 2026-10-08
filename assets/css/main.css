@@ -348,6 +348,7 @@ h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 400; }
 }
 .epigraph .zh { color: var(--ink); font-family: var(--zh); font-size: 19px; }
 .epigraph .en { font-family: var(--serif); font-style: italic; }
+.epigraph .src { color: var(--accent-text); font-family: var(--zh); font-size: 13px; }
 
 .stages {
   display: grid;
