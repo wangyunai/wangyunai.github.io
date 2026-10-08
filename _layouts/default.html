@@ -11,7 +11,7 @@
     {%- assign desc = page.description | default: site.description | strip_newlines | strip %}
     <title>{{ full_title | escape }}</title>
     <meta name="description" content="{{ desc | escape }}" />
-    <meta name="author" content="Yun Wang, PhD" />
+    <meta name="author" content="Yun Wang, Ph.D." />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&amp;family=Instrument+Sans:wght@400..600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" />
+    <!-- Only the characters of the epigraph are downloaded -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500&amp;text=%C2%B7%E3%80%8A%E3%80%8B%E4%B8%8A%E4%B9%8B%E4%BC%A0%E5%91%A8%E6%98%93%E7%94%9F%E7%B3%BB%E8%B0%93%E8%BE%9E&amp;display=swap" />
     <link rel="stylesheet" href="/assets/css/main.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
     <script>
       if ("IntersectionObserver" in window && window.matchMedia &&
@@ -65,14 +67,18 @@
     <script>
       (function () {
         if (!document.documentElement.classList.contains("motion")) return;
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add("is-playing");
-            io.unobserve(entry.target);
-          });
-        }, { threshold: 0.2 });
-        document.querySelectorAll("[data-play]").forEach(function (el) { io.observe(el); });
+        // data-play="0.6" = start once 60% of the element is on screen (default 20%)
+        document.querySelectorAll("[data-play]").forEach(function (el) {
+          var t = parseFloat(el.getAttribute("data-play")) || 0.2;
+          var io = new IntersectionObserver(function (entries, obs) {
+            entries.forEach(function (entry) {
+              if (entry.intersectionRatio < t - 0.001) return;
+              entry.target.classList.add("is-playing");
+              obs.unobserve(entry.target);
+            });
+          }, { threshold: t });
+          io.observe(el);
+        });
       })();
     </script>
   </body>

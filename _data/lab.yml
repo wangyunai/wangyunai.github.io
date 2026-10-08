@@ -12,16 +12,14 @@ links:
   github: https://github.com/wangyunai
   linkedin: https://www.linkedin.com/in/yun-wang-8308713b/
 
-# The dark "at a glance" band on the homepage. Keep it to four.
+# The dark "at a glance" band on the homepage. Up to four items.
 stats:
   - value: K99/R00
     label: NIH Pathway to Independence Award, NICHD
   - value: 2 R01s
-    label: NIH R01s as principal investigator, among 4 active NIH awards
+    label: As principal investigator, among 4 active NIH awards
   - value: 30+
     label: Peer-reviewed publications in imaging, AI, and mental health
-  - value: "9"
-    label: Trainees mentored, from undergraduates to postdocs
 
 # The MOON Study (R01HD121683) families page at /moon/.
 # Anything left empty is hidden on the site. Participant-facing wording
