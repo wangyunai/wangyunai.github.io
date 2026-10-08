@@ -20,6 +20,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&amp;family=Instrument+Sans:wght@400..600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" />
     <link rel="stylesheet" href="/assets/css/main.css?v={{ site.time | date: '%Y%m%d%H%M' }}" />
+    <script>
+      if ("IntersectionObserver" in window && window.matchMedia &&
+          matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+        document.documentElement.classList.add("motion");
+      }
+    </script>
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="{{ site.title }}" />
@@ -56,5 +62,18 @@
 {{ content }}
     </main>
     {% include footer.html %}
+    <script>
+      (function () {
+        if (!document.documentElement.classList.contains("motion")) return;
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-playing");
+            io.unobserve(entry.target);
+          });
+        }, { threshold: 0.2 });
+        document.querySelectorAll("[data-play]").forEach(function (el) { io.observe(el); });
+      })();
+    </script>
   </body>
 </html>
