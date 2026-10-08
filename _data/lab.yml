@@ -27,6 +27,9 @@ stats:
 # Anything left empty is hidden on the site. Participant-facing wording
 # (eligibility, compensation, MRI safety) should be IRB-approved first.
 moon:
+  # Visit details (MRI weeks, remote consent, check-in schedule) stay hidden
+  # until the IRB approves this web text. Change to true to show them.
+  show_visit_details: false
   phone: ""            # e.g. "(404) 555-0123"
   email_subject: MOON Study interest
   eligibility: ""

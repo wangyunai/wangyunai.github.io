@@ -126,11 +126,13 @@ jsonld: true
       <p class="kicker">For families · Now recruiting in Atlanta</p>
       <h2 id="families-title">Join the MOON Study</h2>
       <p class="lead">We follow families from pregnancy through baby’s first year to learn how a mother’s health, the placenta, and early brain development are connected.</p>
+      {%- if lab.moon.show_visit_details %}
       <ol class="involved">
         <li><p class="when">During pregnancy</p><p class="what">Two MRI visits, at 24–28 and 32–36 weeks</p></li>
         <li><p class="when">After birth</p><p class="what">A baby MRI visit at 1–2 months</p></li>
         <li><p class="when">First year</p><p class="what">Developmental check-ins at 6, 9, and 12 months</p></li>
       </ol>
+      {%- endif %}
       <div class="actions">
         <a class="btn btn-accent" href="/moon/">Learn about joining</a>
         {%- if lab.moon.phone != "" %}

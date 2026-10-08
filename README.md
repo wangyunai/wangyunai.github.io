@@ -55,7 +55,9 @@ six; add `profile: true` to also list it on the PI page.
 
 `/moon/` is the families page. Its phone number, eligibility, compensation, and
 SMS terms link are set in `_data/lab.yml` under `moon:` and stay hidden until
-filled in. Participant-facing wording should be IRB-approved before it goes live.
+filled in. The visit schedule (MRI weeks, remote consent, first-year check-ins)
+is written but hidden until you set `show_visit_details: true`. Participant-facing
+wording should be IRB-approved before it goes live.
 
 ## Pages and layout
 
