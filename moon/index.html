@@ -1,0 +1,114 @@
+---
+layout: default
+title: The MOON Study — for families
+description: >-
+  The MOON Study at Emory University follows families from pregnancy through
+  baby’s first year to learn how a mother’s health, the placenta, and early
+  brain development are connected.
+footer: simple
+---
+{%- assign lab = site.data.lab -%}
+{%- assign moon = lab.moon -%}
+{%- capture mailto %}mailto:{{ lab.email }}?subject={{ moon.email_subject | uri_escape }}{% endcapture -%}
+
+<section class="moon-hero" aria-labelledby="moon-title">
+  <div class="wrap">
+    <div style="flex: 1 1 560px; min-width: 0;">
+      <p class="kicker">The MOON Study · Now recruiting in Atlanta</p>
+      <h1 id="moon-title">Help us learn how pregnancy shapes a baby’s growing brain.</h1>
+      <p class="lead">The MOON Study follows families from pregnancy through baby’s first year. It is run by the {{ site.title }} at {{ lab.institution }} and funded by the National Institutes of Health.</p>
+      <div class="actions">
+        <a class="btn btn-accent" href="{{ mailto }}">Email the study team</a>
+        {%- if moon.phone != "" %}
+        <span>or call <strong>{{ moon.phone }}</strong></span>
+        {%- endif %}
+      </div>
+      <p class="fine">Contacting us doesn’t enroll you, and taking part is always voluntary. Please don’t include medical details in your first message.</p>
+    </div>
+    <span class="families-art sprite sprite-mother-infant" role="img" aria-label="Watercolor of a mother holding her baby" data-play></span>
+  </div>
+</section>
+
+{%- if moon.show_visit_details %}
+<section class="wrap section" id="steps" aria-labelledby="steps-title">
+  <p class="kicker">What’s involved</p>
+  <h2 class="display" id="steps-title" style="margin-top: 12px;">From your first call to baby’s first birthday</h2>
+  <ol class="stages steps">
+    <li class="stage">
+      <div class="node"></div>
+      <p class="stage-num">Step 1</p>
+      <h3>A short call</h3>
+      <p class="stage-text">We explain the study and check whether it’s a good fit for you.</p>
+    </li>
+    <li class="stage">
+      <div class="node"></div>
+      <p class="stage-num">Step 2</p>
+      <h3>Consent from home</h3>
+      <p class="stage-text">Go over the consent form with us by phone or video, then sign online.</p>
+    </li>
+    <li class="stage">
+      <div class="node"></div>
+      <p class="stage-num">Step 3 · Pregnancy</p>
+      <h3>Two MRI visits</h3>
+      <p class="stage-text">At 24–28 and 32–36 weeks, plus short online food diaries in the second and third trimesters.</p>
+    </li>
+    <li class="stage">
+      <div class="node"></div>
+      <p class="stage-num">Step 4 · 1–2 months</p>
+      <h3>Baby’s MRI visit</h3>
+      <p class="stage-text">One MRI visit for your baby in the first two months.</p>
+    </li>
+    <li class="stage">
+      <div class="node"></div>
+      <p class="stage-num">Step 5 · First year</p>
+      <h3>Check-ins</h3>
+      <p class="stage-text">Short questionnaires at 6, 9, and 12 months, and play-based activities with your baby at 6 and 12 months.</p>
+    </li>
+  </ol>
+</section>
+{%- endif %}
+
+{%- assign know_count = moon.good_to_know.size %}
+{%- if moon.eligibility != "" or moon.compensation != "" or moon.sms_terms_url != "" or know_count > 0 %}
+<section class="wrap section" aria-labelledby="know-title">
+  <h2 class="display" id="know-title">Good to know</h2>
+  <div class="know">
+    {%- if moon.eligibility != "" %}
+    <div><h3>Who can join</h3><p>{{ moon.eligibility }}</p></div>
+    {%- endif %}
+    {%- if moon.compensation != "" %}
+    <div><h3>Compensation</h3><p>{{ moon.compensation }}</p></div>
+    {%- endif %}
+    {%- for k in moon.good_to_know %}
+    <div><h3>{{ k.title }}</h3><p>{{ k.text }}</p></div>
+    {%- endfor %}
+    {%- if moon.sms_terms_url != "" %}
+    <div><h3>Text messages</h3><p>Reply STOP to opt out or HELP for help at any time. <a href="{{ moon.sms_terms_url }}">SMS terms and privacy</a></p></div>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}
+
+<section class="band contact-band" id="contact" aria-labelledby="contact-title"{% if moon.show_visit_details or know_count > 0 or moon.eligibility != "" or moon.compensation != "" or moon.sms_terms_url != "" %} style="margin-top: clamp(64px, 8vw, 104px);"{% endif %}>
+  <div class="wrap">
+    <div class="contact-intro">
+      <h2 class="display" id="contact-title">Questions? Talk with the study team.</h2>
+      <p>We’re happy to explain the study, with no commitment to join.</p>
+    </div>
+    <div class="contact-list">
+      <div>
+        <p class="label">Email</p>
+        <a class="value" href="{{ mailto }}">{{ lab.email }}</a>
+      </div>
+      {%- if moon.phone != "" %}
+      <div>
+        <p class="label">Phone</p>
+        <p class="value">{{ moon.phone }}</p>
+      </div>
+      {%- endif %}
+      <div>
+        <p>Also recruiting, in Durham, NC: <a href="https://psychiatry.duke.edu/duke-momma-study" target="_blank" rel="noreferrer">the MOMMA Study at Duke University</a></p>
+      </div>
+    </div>
+  </div>
+</section>

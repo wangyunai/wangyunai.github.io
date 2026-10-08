@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-name">{{ site.title }}</span>
+      <span class="brand-sub">{{ site.data.lab.institution }}</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/#research">Research</a>
+      <a href="/#people">People</a>
+      <a href="/#methods">Methods</a>
+      <a href="/#publications">Publications</a>
+      <a href="/#news">News</a>
+      {%- if page.url == "/moon/" %}
+      <a class="nav-cta" href="#contact">Contact the study team</a>
+      {%- else %}
+      <a class="nav-cta" href="/moon/">Join the MOON Study</a>
+      {%- endif %}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,47 @@
+{%- assign lab = site.data.lab -%}
+{%- if page.footer == "simple" %}
+<footer class="footer-simple">
+  <div class="wrap">
+    <span>MOON Study · {{ site.title }} · {{ lab.institution }}</span>
+    <a href="/">Back to the lab’s homepage</a>
+  </div>
+</footer>
+{%- else %}
+<footer class="site-footer">
+  <div class="wrap">
+    <h2 class="display">Work with us</h2>
+    <div class="paths">
+      <div class="path">
+        <h3>Collaborate</h3>
+        <p>Researchers and clinical partners: bring a focused question, dataset, or method.</p>
+        <a href="mailto:{{ lab.email }}?subject=Collaboration%20inquiry">Start a conversation</a>
+      </div>
+      <div class="path">
+        <h3>Train with us</h3>
+        <p>Prospective trainees: share your background and interests. Openings depend on projects and funding.</p>
+        <a href="mailto:{{ lab.email }}?subject=Prospective%20trainee%20inquiry">Introduce yourself</a>
+      </div>
+      <div class="path">
+        <h3>Take part</h3>
+        <p>Expecting in the Atlanta area? The MOON Study is recruiting families.</p>
+        <a href="/moon/">Join the MOON Study</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div class="footer-id">
+        <span class="brand-name">{{ site.title }}</span>
+        <span>{{ lab.institution }} · {{ lab.location }}</span>
+        <a href="mailto:{{ lab.email }}">{{ lab.email }}</a>
+      </div>
+      <nav class="footer-links" aria-label="Profiles">
+        {%- if lab.links.emory != "" %}<a href="{{ lab.links.emory }}" target="_blank" rel="noreferrer">Emory profile</a>{% endif %}
+        {%- if lab.links.orcid != "" %}<a href="{{ lab.links.orcid }}" target="_blank" rel="noreferrer">ORCID</a>{% endif %}
+        {%- if lab.links.scholar != "" %}<a href="{{ lab.links.scholar }}" target="_blank" rel="noreferrer">Google Scholar</a>{% endif %}
+        {%- if lab.links.github != "" %}<a href="{{ lab.links.github }}" target="_blank" rel="noreferrer">GitHub</a>{% endif %}
+        {%- if lab.links.linkedin != "" %}<a href="{{ lab.links.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>{% endif %}
+      </nav>
+    </div>
+    <p class="copyright">© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </div>
+</footer>
+{%- endif %}

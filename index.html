@@ -1,1555 +1,266 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nurture Map Lab | AI &amp; Quantitative MRI for Maternal–Infant Health</title>
-    <meta
-      name="description"
-      content="Yun Wang, PhD, leads an NIH-funded computational maternal–fetal imaging program at Emory University, developing AI and quantitative MRI methods from maternal health through placental and fetal physiology to early brain development."
-    />
-    <meta name="author" content="Yun Wang, PhD" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta
-      name="google-site-verification"
-      content="yHnQfGtxYITrz_1wQaYFI2cyAWuikGDwt81frJaCdhA"
-    />
-    <link rel="canonical" href="https://wangyunai.github.io/" />
-    <link rel="icon" href="images/brand-mark.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&amp;family=Source+Serif+4:opsz,wght@8..60,400..600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/site.css?v=20260930-interactive" />
+---
+layout: default
+jsonld: true
+---
+{%- assign lab = site.data.lab -%}
+{%- assign people = site.data.people -%}
 
-    <meta
-      property="og:title"
-      content="Nurture Map Lab | AI &amp; Quantitative MRI for Maternal–Infant Health"
-    />
-    <meta
-      property="og:description"
-      content="Yun Wang, PhD, leads an NIH-funded computational maternal–fetal imaging program at Emory University, developing AI and quantitative MRI methods from maternal health through placental and fetal physiology to early brain development."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Nurture Map Lab" />
-    <meta property="og:url" content="https://wangyunai.github.io/" />
-    <meta
-      property="og:image"
-      content="https://wangyunai.github.io/images/og-nurture-map-v1.png"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta
-      property="og:image:alt"
-      content="Nurture Map Lab — tracing pathways from maternal health to the developing brain"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Nurture Map Lab | AI &amp; Quantitative MRI for Maternal–Infant Health"
-    />
-    <meta
-      name="twitter:description"
-      content="Yun Wang, PhD, leads an NIH-funded computational maternal–fetal imaging program at Emory University, developing AI and quantitative MRI methods from maternal health through placental and fetal physiology to early brain development."
-    />
-    <meta
-      name="twitter:image"
-      content="https://wangyunai.github.io/images/og-nurture-map-v1.png"
-    />
-    <meta
-      name="twitter:image:alt"
-      content="Nurture Map Lab — tracing pathways from maternal health to the developing brain"
-    />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "https://wangyunai.github.io/#website",
-            "url": "https://wangyunai.github.io/",
-            "name": "Nurture Map Lab",
-            "description": "Yun Wang, PhD, leads an NIH-funded computational maternal–fetal imaging program at Emory University, developing AI and quantitative MRI methods from maternal health through placental and fetal physiology to early brain development.",
-            "inLanguage": "en",
-            "publisher": {
-              "@id": "https://wangyunai.github.io/#lab"
-            }
-          },
-          {
-            "@type": "ResearchOrganization",
-            "@id": "https://wangyunai.github.io/#lab",
-            "name": "Nurture Map Lab",
-            "alternateName": "Nurture Map Laboratory",
-            "slogan": "Maternal–Infant Imaging, AI & Neurodevelopment",
-            "url": "https://wangyunai.github.io/",
-            "logo": "https://wangyunai.github.io/images/brand-mark.png",
-            "email": "yun.wang2@emory.edu",
-            "parentOrganization": {
-              "@type": "CollegeOrUniversity",
-              "name": "Emory University",
-              "url": "https://www.emory.edu/"
-            },
-            "member": {
-              "@id": "https://wangyunai.github.io/people/yun-wang/#person"
-            }
-          },
-          {
-            "@type": "Person",
-            "@id": "https://wangyunai.github.io/people/yun-wang/#person",
-            "name": "Yun Wang",
-            "honorificSuffix": "PhD",
-            "url": "https://wangyunai.github.io/people/yun-wang/",
-            "image": "https://wangyunai.github.io/images/yun-wang-illustrated.png",
-            "jobTitle": "Assistant Professor of Biomedical Informatics",
-            "worksFor": {
-              "@id": "https://wangyunai.github.io/#lab"
-            },
-            "affiliation": {
-              "@type": "CollegeOrUniversity",
-              "name": "Emory University",
-              "url": "https://www.emory.edu/"
-            },
-            "sameAs": [
-              "https://med.emory.edu/directory/profile/?u=YWAN303",
-              "https://orcid.org/0000-0003-2426-2876",
-              "https://dblp.org/pid/36/3235-49.html",
-              "https://github.com/wangyunai",
-              "https://www.linkedin.com/in/yun-wang-8308713b/"
-            ],
-            "knowsAbout": [
-              "Artificial intelligence for medical imaging",
-              "Quantitative magnetic resonance imaging",
-              "Maternal–fetal imaging",
-              "Placental and fetal physiology",
-              "Infant brain development",
-              "Biomedical informatics"
-            ]
-          }
-        ]
-      }
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0H82M97S0K"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-0H82M97S0K', {
-        allow_google_signals: false,
-        allow_ad_personalization_signals: false
-      });
-    </script>
-  </head>
-
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
-
-    <header class="site-header">
-      <div class="site-frame header-inner">
-        <a class="brand" href="/" aria-label="Nurture Map Lab home">
-          Nurture Map Lab
-        </a>
-        <nav class="primary-navigation" aria-label="Primary navigation">
-          <a href="#research">Research</a>
-          <a class="navigation-cta" href="#participate">For families</a>
-          <a href="#methods">Methods</a>
-          <a href="#publications">Publications</a>
-          <a href="#people">People</a>
-          <a href="#connect">Connect</a>
-        </nav>
-      </div>
-    </header>
-
-    <div class="narrative-shell">
-      <main id="main-content">
-        <section class="hero" id="home">
-          <div class="site-frame hero-layout">
-            <div class="hero-copy">
-              <p class="hero-kicker">
-                Maternal–Infant Imaging, AI &amp; Neurodevelopment
-              </p>
-              <h1>
-                Tracing the pathways from maternal health to the developing
-                brain.
-              </h1>
-              <p class="hero-summary">
-                We develop AI and quantitative MRI methods to map how maternal
-                health shapes placental function, fetal physiology, brain
-                development, and early neurobehavior.
-              </p>
-              <nav class="hero-actions" aria-label="Introduction">
-                <a class="button-link" href="#nurture-path-title">
-                  Explore the Nurture Map
-                </a>
-                <a class="text-arrow-link" href="#participate">
-                  Participate in a study <span aria-hidden="true">→</span>
-                </a>
-              </nav>
-            </div>
-            <div class="hero-visual">
-              <figure
-                class="hero-sketch hero-life-cycle"
-                role="img"
-                aria-label="Watercolor sequence showing pregnancy, infancy, and a young child in motion"
-              >
-                <svg
-                  class="hero-growth-path"
-                  viewBox="0 0 320 480"
-                  preserveAspectRatio="none"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path
-                    class="hero-growth-path-wash"
-                    d="M 45 390 C 52 310, 119 292, 146 238 S 221 173, 276 90"
-                    pathLength="1"
-                  ></path>
-                  <path
-                    class="hero-growth-path-line"
-                    d="M 45 390 C 52 310, 119 292, 146 238 S 221 173, 276 90"
-                    pathLength="1"
-                  ></path>
-                  <circle
-                    class="hero-growth-milestone hero-growth-milestone-pregnancy"
-                    cx="45"
-                    cy="390"
-                    r="4.5"
-                  ></circle>
-                  <circle
-                    class="hero-growth-milestone hero-growth-milestone-infant"
-                    cx="146"
-                    cy="238"
-                    r="4.5"
-                  ></circle>
-                  <circle
-                    class="hero-growth-milestone hero-growth-milestone-child"
-                    cx="276"
-                    cy="90"
-                    r="4.5"
-                  ></circle>
-                </svg>
-                <span
-                  class="hero-life-stage hero-life-stage-pregnancy"
-                  aria-hidden="true"
-                >
-                  <span
-                    class="hero-life-sprite hero-life-sprite-pregnancy"
-                  ></span>
-                </span>
-                <span
-                  class="hero-life-stage hero-life-stage-infant"
-                  aria-hidden="true"
-                >
-                  <span
-                    class="hero-life-sprite hero-life-sprite-infant"
-                  ></span>
-                </span>
-                <span
-                  class="hero-life-stage hero-life-stage-child"
-                  aria-hidden="true"
-                >
-                  <span
-                    class="hero-life-sprite hero-life-sprite-child"
-                  ></span>
-                </span>
-              </figure>
-              <figure class="hero-epigraph" aria-label="Guiding passage">
-                <blockquote lang="zh-Hans">
-                  <p>生生之谓易。</p>
-                </blockquote>
-                <figcaption>
-                  <cite>《周易·系辞上传》</cite>
-                  <span>Life is a continuous process of becoming.</span>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <section
-            class="site-frame nurture-path"
-            aria-labelledby="nurture-path-title"
-          >
-            <header class="nurture-path-intro">
-              <p>The Nurture Map</p>
-              <h2 id="nurture-path-title">
-                One connected developmental story.
-              </h2>
-              <span>
-                Choose a stage to follow what we measure and why it matters.
-              </span>
-            </header>
-            <div class="nurture-path-explorer">
-              <ol>
-                <li>
-                  <button
-                    class="nurture-stage-button"
-                    type="button"
-                    aria-controls="nurture-stage-detail"
-                    aria-pressed="true"
-                    data-stage="0"
-                  >
-                    <span class="path-point" aria-hidden="true">01</span>
-                    <strong>Maternal context</strong>
-                    <small>Health · metabolism · environment</small>
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="nurture-stage-button"
-                    type="button"
-                    aria-controls="nurture-stage-detail"
-                    aria-pressed="false"
-                    data-stage="1"
-                  >
-                    <span class="path-point" aria-hidden="true">02</span>
-                    <strong>Placenta</strong>
-                    <small>Exchange · function · signaling</small>
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="nurture-stage-button"
-                    type="button"
-                    aria-controls="nurture-stage-detail"
-                    aria-pressed="false"
-                    data-stage="2"
-                  >
-                    <span class="path-point" aria-hidden="true">03</span>
-                    <strong>Fetal circulation</strong>
-                    <small>Flow · hemodynamics · oxygen delivery</small>
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="nurture-stage-button"
-                    type="button"
-                    aria-controls="nurture-stage-detail"
-                    aria-pressed="false"
-                    data-stage="3"
-                  >
-                    <span class="path-point" aria-hidden="true">04</span>
-                    <strong>Developing brain</strong>
-                    <small>Structure · connectivity · growth</small>
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="nurture-stage-button"
-                    type="button"
-                    aria-controls="nurture-stage-detail"
-                    aria-pressed="false"
-                    data-stage="4"
-                  >
-                    <span class="path-point" aria-hidden="true">05</span>
-                    <strong>Early neurobehavior</strong>
-                    <small>Regulation · attention · communication</small>
-                  </button>
-                </li>
-              </ol>
-              <div
-                class="nurture-path-detail"
-                id="nurture-stage-detail"
-                aria-live="polite"
-              >
-                <p class="nurture-detail-stage">01 · Maternal context</p>
-                <dl>
-                  <div>
-                    <dt>What we measure</dt>
-                    <dd class="nurture-detail-measure">
-                      Maternal metabolic, inflammatory, environmental, and
-                      psychosocial context.
-                    </dd>
-                  </div>
-                  <div>
-                    <dt>Why it matters</dt>
-                    <dd class="nurture-detail-meaning">
-                      These are potentially modifiable influences that begin
-                      the developmental pathway.
-                    </dd>
-                  </div>
-                </dl>
-                <a class="text-arrow-link" href="#research">
-                  See related research <span aria-hidden="true">→</span>
-                </a>
-              </div>
-            </div>
-          </section>
-        </section>
-
-        <aside
-          class="site-frame lab-identity-bar"
-          aria-label="Laboratory profile"
-        >
-          <div class="lab-identity-copy">
-            <span>Led by</span>
-            <strong>
-              <a href="people/yun-wang/">Yun Wang, Ph.D.</a>
-            </strong>
-            <small>Assistant Professor of Biomedical Informatics</small>
-          </div>
-          <div class="lab-identity-copy">
-            <span>Based at</span>
-            <strong>Emory University School of Medicine</strong>
-            <small>Atlanta, Georgia</small>
-          </div>
-          <div class="lab-evidence" aria-label="Laboratory activity">
-            <span><b>2</b> R01s</span>
-            <span><b>4</b> active NIH awards</span>
-            <span><b>32</b> peer-reviewed publications</span>
-          </div>
-          <nav class="lab-identity-links" aria-label="Contact and profiles">
-            <a href="people/yun-wang/">PI profile</a>
-            <a href="mailto:yun.wang2@emory.edu">Email</a>
-            <a
-              href="https://orcid.org/0000-0003-2426-2876"
-              target="_blank"
-              rel="noreferrer"
-            >
-              ORCID
-            </a>
-          </nav>
-        </aside>
-
-        <section
-          class="latest-strip"
-          id="latest"
-          aria-labelledby="latest-title"
-        >
-          <div class="site-frame latest-layout">
-            <header class="latest-heading">
-              <p>Latest</p>
-              <h2 id="latest-title">Recent activity</h2>
-            </header>
-            <div class="latest-list">
-              <article class="latest-item">
-                <div class="latest-meta">
-                  <span>Grant</span>
-                  <time datetime="2026-06">June 2026</time>
-                </div>
-                <h3>
-                  <a
-                    href="https://reporter.nih.gov/project-details/11342946"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    New NICHD R01 supports a longitudinal study of the maternal
-                    obesity–placenta–brain axis.
-                  </a>
-                </h3>
-              </article>
-              <article class="latest-item">
-                <div class="latest-meta">
-                  <span>Papers</span>
-                  <time datetime="2026">2026</time>
-                </div>
-                <h3>
-                  <a
-                    href="https://proceedings.mlr.press/v315/liu26b.html"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Three senior-author papers accepted at Medical Imaging with
-                    Deep Learning.
-                  </a>
-                </h3>
-              </article>
-              <article class="latest-item">
-                <div class="latest-meta">
-                  <span>Media</span>
-                  <time datetime="2025-03">March 2025</time>
-                </div>
-                <h3>
-                  <a
-                    href="https://www.gpb.org/news/2025/03/20/emory-researcher-uses-artificial-intelligence-predict-youth-mental-health-risks"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Mental health prediction study published in Nature Medicine
-                    and featured by Georgia Public Broadcasting.
-                  </a>
-                </h3>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section participate-section" id="participate">
-          <div class="site-frame">
-            <header class="section-heading participate-heading">
-              <p class="section-kicker">For families</p>
-              <h2>Participate in our research</h2>
-              <p>
-                Two NIH-funded Nurture Map studies are currently recruiting
-                participants. Together, they examine how health during
-                pregnancy relates to placental function, the maternal
-                microbiome and metabolome, and early neurodevelopment.
-              </p>
-            </header>
-
-            <div class="study-list">
-              <article class="study-card">
-                <p class="study-status">
-                  <span aria-hidden="true"></span> Recruiting participants
-                </p>
-                <p class="study-code">NICHD · R01HD121683</p>
-                <h3>Maternal Obesity–Placenta–Brain Study</h3>
-                <p>
-                  We are following families from pregnancy through infancy to
-                  understand how maternal health, placental function, fetal
-                  circulation, infant brain development, and early behavior are
-                  connected.
-                </p>
-                <div class="study-actions">
-                  <a
-                    class="text-arrow-link"
-                    href="mailto:yun.wang2@emory.edu?subject=Interest%20in%20R01HD121683%20participation"
-                  >
-                    Ask about participating <span aria-hidden="true">→</span>
-                  </a>
-                </div>
-              </article>
-
-              <article class="study-card">
-                <p class="study-status">
-                  <span aria-hidden="true"></span> Recruiting participants
-                </p>
-                <p class="study-code">NIMH · R01MH133313</p>
-                <h3>Maternal Metabolism and Neurodevelopment Study</h3>
-                <p>
-                  This study examines how maternal metabolic health, the
-                  microbiome and metabolome, and early neurodevelopment may be
-                  linked across pregnancy and early life.
-                </p>
-                <div class="study-actions">
-                  <a
-                    class="text-arrow-link"
-                    href="mailto:yun.wang2@emory.edu?subject=Interest%20in%20R01MH133313%20participation"
-                  >
-                    Ask about participating <span aria-hidden="true">→</span>
-                  </a>
-                  <a
-                    href="https://psychiatry.duke.edu/duke-momma-study"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Study details
-                  </a>
-                </div>
-              </article>
-            </div>
-
-            <p class="participant-note">
-              Eligibility and study activities differ by project. Contact the
-              study team for current, approved details. Contacting us does not
-              enroll you, and participation is voluntary. Please do not include
-              medical records or sensitive health information in your first
-              email.
-            </p>
-          </div>
-        </section>
-
-        <section class="section" id="research">
-          <div class="site-frame">
-            <header class="section-heading">
-              <h2>Research</h2>
-              <p>
-                Our program is supported by four active NIH awards and has
-                contributed to 32 peer-reviewed publications.
-              </p>
-              <p>
-                By combining imaging, machine learning, multi-omics, and
-                longitudinal behavioral data, we build measurable phenotypes
-                and identify potentially modifiable pathways for earlier
-                intervention.
-              </p>
-            </header>
-
-            <div class="research-list">
-              <details class="research-item" open>
-                <summary>
-                  <span class="research-number" aria-hidden="true">01</span>
-                  <span class="research-summary-copy">
-                    <h3>AI Methods for Perinatal Imaging Phenotypes</h3>
-                    <small>
-                      Self-supervised learning · Domain adaptation · Foundation
-                      models
-                    </small>
-                  </span>
-                  <span class="research-toggle" aria-hidden="true">+</span>
-                </summary>
-                <div class="research-detail">
-                  <p class="research-description">
-                    We develop learning methods for fetal, placental, newborn,
-                    and infant MRI. Our work addresses motion, changing anatomy,
-                    variable contrast, scanner differences, and limited labels
-                    to produce interpretable developmental phenotypes.
-                  </p>
-                  <dl class="research-facts">
-                    <div>
-                      <dt>Core question</dt>
-                      <dd>
-                        How can we recover reliable phenotypes from moving,
-                        rapidly changing anatomy and limited labels?
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>Current work</dt>
-                      <dd>
-                        Motion-robust fetal, placental, newborn, and infant MRI
-                        across heterogeneous scanners.
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>Why it matters</dt>
-                      <dd>
-                        Interpretable and reproducible measurements that can
-                        travel across studies and clinical settings.
-                      </dd>
-                    </div>
-                  </dl>
-                </div>
-              </details>
-
-              <details class="research-item">
-                <summary>
-                  <span class="research-number" aria-hidden="true">02</span>
-                  <span class="research-summary-copy">
-                    <h3>Placental and Fetal-Circulatory Pathways</h3>
-                    <small>
-                      Placental MRI · Fetal circulation · Multi-omics
-                    </small>
-                  </span>
-                  <span class="research-toggle" aria-hidden="true">+</span>
-                </summary>
-                <div class="research-detail">
-                  <p class="research-description">
-                    We study how maternal metabolism, inflammation, stress,
-                    medications, and environmental context shape placental
-                    function, fetal hemodynamics, oxygen delivery, and early
-                    brain development.
-                  </p>
-                  <dl class="research-facts">
-                    <div>
-                      <dt>Core question</dt>
-                      <dd>
-                        Where does risk emerge along the
-                        maternal–placental–fetal pathway?
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>Current work</dt>
-                      <dd>
-                        Longitudinal MRI and multi-omics across pregnancy and
-                        infancy in two NIH-funded studies.
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>Why it matters</dt>
-                      <dd>
-                        Potentially modifiable biological pathways before
-                        developmental differences become established.
-                      </dd>
-                    </div>
-                  </dl>
-                </div>
-              </details>
-
-              <details class="research-item">
-                <summary>
-                  <span class="research-number" aria-hidden="true">03</span>
-                  <span class="research-summary-copy">
-                    <h3>From Perinatal Phenotypes to Neurobehavioral Risk</h3>
-                    <small>
-                      Longitudinal outcomes · Early behavior · Prevention
-                    </small>
-                  </span>
-                  <span class="research-toggle" aria-hidden="true">+</span>
-                </summary>
-                <div class="research-detail">
-                  <p class="research-description">
-                    We connect perinatal imaging phenotypes with regulation,
-                    attention, social communication, NICU course, and early
-                    psychopathology risk, with an emphasis on modifiable
-                    pathways and early prevention.
-                  </p>
-                  <dl class="research-facts">
-                    <div>
-                      <dt>Core question</dt>
-                      <dd>
-                        Which perinatal phenotypes signal later neurobehavioral
-                        risk or resilience?
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>Current work</dt>
-                      <dd>
-                        Linking imaging with regulation, attention,
-                        communication, NICU course, and early psychopathology.
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>Why it matters</dt>
-                      <dd>
-                        Earlier risk stratification and prevention grounded in
-                        measurable developmental pathways.
-                      </dd>
-                    </div>
-                  </dl>
-                </div>
-              </details>
-            </div>
-
-            <article
-              class="featured-story"
-              aria-labelledby="featured-program-title"
-            >
-              <div class="featured-story-copy">
-                <p class="section-kicker">
-                  Featured program · NICHD R01HD121683
-                </p>
-                <h3 id="featured-program-title">
-                  Following the maternal health–placenta–brain pathway from
-                  pregnancy to infancy
-                </h3>
-                <p class="featured-story-lead">
-                  How do conditions during pregnancy shape placental function
-                  and early brain development? This longitudinal program uses
-                  multimodal MRI and interpretable computational methods to
-                  study connected changes from gestation through infancy.
-                </p>
-                <dl class="story-facts">
-                  <div>
-                    <dt>Question</dt>
-                    <dd>Where along this connected pathway does risk emerge?</dd>
-                  </div>
-                  <div>
-                    <dt>Approach</dt>
-                    <dd>
-                      Longitudinal imaging, biological measures, and early
-                      behavior.
-                    </dd>
-                  </div>
-                  <div>
-                    <dt>Why it matters</dt>
-                    <dd>
-                      To identify measurable and potentially modifiable
-                      pathways.
-                    </dd>
-                  </div>
-                </dl>
-                <a class="text-arrow-link" href="#participate">
-                  Learn about participation <span aria-hidden="true">→</span>
-                </a>
-              </div>
-
-              <figure
-                class="scientific-plate"
-                aria-labelledby="scientific-plate-caption"
-              >
-                <div class="scientific-plate-grid">
-                  <div class="scientific-plate-slot">
-                    <div class="scientific-plate-image">
-                      <img
-                        src="images/research-placenta.png"
-                        alt="Anatomical illustration of the placenta and its branching maternal–fetal vasculature"
-                        width="230"
-                        height="185"
-                      />
-                    </div>
-                    <div class="scientific-plate-label">
-                      <span aria-hidden="true">01</span>
-                      <strong>Placental function</strong>
-                    </div>
-                  </div>
-                  <div class="scientific-plate-slot">
-                    <div class="scientific-plate-image">
-                      <img
-                        src="images/research-circulation.png"
-                        alt="Anatomical illustration representing the fetal heart and circulation"
-                        width="150"
-                        height="190"
-                      />
-                    </div>
-                    <div class="scientific-plate-label">
-                      <span aria-hidden="true">02</span>
-                      <strong>Fetal circulation</strong>
-                    </div>
-                  </div>
-                  <div class="scientific-plate-slot">
-                    <div class="scientific-plate-image">
-                      <img
-                        src="images/research-brain.png"
-                        alt="Anatomical illustration of the developing brain in lateral view"
-                        width="190"
-                        height="155"
-                      />
-                    </div>
-                    <div class="scientific-plate-label">
-                      <span aria-hidden="true">03</span>
-                      <strong>Developing brain</strong>
-                    </div>
-                  </div>
-                </div>
-                <figcaption id="scientific-plate-caption">
-                  A connected view of placental function, fetal circulation,
-                  and the developing brain.
-                </figcaption>
-              </figure>
-            </article>
-
-            <div class="support-block" id="funding">
-              <div class="subsection-heading">
-                <h3>Active support</h3>
-                <p>Current federally funded research programs.</p>
-              </div>
-
-              <div class="funding-list">
-                <article class="funding-item">
-                  <div class="funding-code">
-                    <strong>NICHD</strong>
-                    <span>R01HD121683</span>
-                  </div>
-                  <p>
-                    <a
-                      href="https://reporter.nih.gov/project-details/11342946"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      The Maternal Obesity–Placenta–Brain Axis: Longitudinal MRI
-                      from Gestation to Infancy
-                    </a>
-                  </p>
-                  <div class="funding-meta">
-                    <span>PI</span><span>2026–2031</span>
-                    <a class="recruiting-badge" href="#participate">
-                      Recruiting participants
-                    </a>
-                  </div>
-                </article>
-
-                <article class="funding-item">
-                  <div class="funding-code">
-                    <strong>NIMH</strong>
-                    <span>R01MH133313</span>
-                  </div>
-                  <p>
-                    <a
-                      href="https://reporter.nih.gov/project-details/11314497"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Prenatal Maternal Obesity and Neurodevelopment: The
-                      Mediating Role of the Microbiome and Metabolome
-                    </a>
-                  </p>
-                  <div class="funding-meta">
-                    <span>Multiple PI</span><span>2024–2029</span>
-                    <a class="recruiting-badge" href="#participate">
-                      Recruiting participants
-                    </a>
-                  </div>
-                </article>
-
-                <article class="funding-item">
-                  <div class="funding-code">
-                    <strong>NICHD</strong>
-                    <span>R00HD103912</span>
-                  </div>
-                  <p>
-                    <a
-                      href="https://reporter.nih.gov/project-details/11324922"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Leveraging Artificial Intelligence to Develop Novel Tools
-                      for Studying Infant Brain Development
-                    </a>
-                  </p>
-                  <div class="funding-meta">
-                    <span>PI</span><span>2024–2027</span>
-                  </div>
-                </article>
-
-                <article class="funding-item">
-                  <div class="funding-code">
-                    <strong>NIH</strong>
-                    <span>U54HD122209</span>
-                  </div>
-                  <p>
-                    <a
-                      href="https://reporter.nih.gov/project-details/11173107"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      ARISEN: Autoimmunity, Rasmussen’s, Inflammation &amp;
-                      Status Epilepticus Research Network
-                    </a>
-                  </p>
-                  <div class="funding-meta">
-                    <span>Co-Investigator</span><span>2025–2030</span>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          class="section vision-section"
-          id="vision"
-          aria-labelledby="vision-title"
-        >
-          <div class="site-frame vision-layout">
-            <header class="section-heading vision-heading">
-              <p class="section-kicker">Research trajectory</p>
-              <h2 id="vision-title">Where we’re going</h2>
-              <p>
-                Our next phase connects measurement, mechanism, and prevention
-                across the maternal–placental–fetal–brain pathway.
-              </p>
-            </header>
-            <ol class="vision-list">
-              <li class="vision-item">
-                <span aria-hidden="true">01</span>
-                <div>
-                  <h3>Measure</h3>
-                  <p>
-                    Develop quantitative MRI and AI biomarkers of placental,
-                    fetal-circulatory, and developing-brain physiology.
-                  </p>
-                </div>
-              </li>
-              <li class="vision-item">
-                <span aria-hidden="true">02</span>
-                <div>
-                  <h3>Explain</h3>
-                  <p>
-                    Connect maternal metabolic and environmental factors to
-                    placental function, fetal physiology, and neurodevelopment.
-                  </p>
-                </div>
-              </li>
-              <li class="vision-item">
-                <span aria-hidden="true">03</span>
-                <div>
-                  <h3>Predict &amp; Prevent</h3>
-                  <p>
-                    Identify early, modifiable pathways that can guide risk
-                    stratification and intervention before neurodevelopmental
-                    differences become established.
-                  </p>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <section class="section methods-section" id="methods">
-          <div class="site-frame">
-            <header class="section-heading">
-              <h2>Methods and software</h2>
-              <p>
-                Our methods account for motion, rapid anatomical change, sparse
-                labels, and heterogeneous scanners in fetal, placental,
-                newborn, and infant MRI.
-              </p>
-            </header>
-
-            <dl class="methods-framework" aria-label="Methodological program">
-              <div>
-                <dt>AI methodology</dt>
-                <dd>
-                  Self-supervised learning · Foundation models · Domain
-                  adaptation · Generative modeling
-                </dd>
-              </div>
-              <div>
-                <dt>Imaging methodology</dt>
-                <dd>
-                  Motion-robust reconstruction · Quantitative MRI ·
-                  Segmentation · Multimodal phenotyping
-                </dd>
-              </div>
-            </dl>
-
-            <div class="methods-list">
-              <article class="method-item">
-                <p>Federated infant neuroimaging platform · 2022</p>
-                <h3>FINNEAS</h3>
-                <div>
-                  Privacy-preserving, cloud-based analysis that makes advanced
-                  infant MRI methods accessible without requiring programming
-                  expertise.
-                  <nav class="method-links" aria-label="FINNEAS resources">
-                    <a
-                      href="https://www.finneas.ai/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Platform
-                    </a>
-                  </nav>
-                </div>
-              </article>
-              <article class="method-item">
-                <p>Medical image segmentation · CVPR 2024</p>
-                <h3>MAPSeg</h3>
-                <div>
-                  Unified domain adaptation for heterogeneous 3D medical images
-                  using masked autoencoding and pseudo-labeling.
-                  <nav class="method-links" aria-label="MAPSeg resources">
-                    <a
-                      href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_MAPSeg_Unified_Unsupervised_Domain_Adaptation_for_Heterogeneous_Medical_Image_Segmentation_CVPR_2024_paper.html"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Paper
-                    </a>
-                    <a
-                      href="https://github.com/XuzheZ/MAPSeg"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Code
-                    </a>
-                  </nav>
-                </div>
-              </article>
-              <article class="method-item">
-                <p>Language-guided segmentation · MIDL 2026</p>
-                <h3>NeuroLangSeg</h3>
-                <div>
-                  Subcortical segmentation with pseudo-supervision and
-                  anatomical–linguistic validation.
-                  <nav class="method-links" aria-label="NeuroLangSeg resources">
-                    <a
-                      href="https://proceedings.mlr.press/v315/liu26b.html"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Paper
-                    </a>
-                    <a
-                      href="https://github.com/jlliu2001/SAT_MPL"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Code
-                    </a>
-                  </nav>
-                </div>
-              </article>
-              <article class="method-item">
-                <p>Diffusion reconstruction · MIDL 2026</p>
-                <h3>Fetal MRI Super-Resolution</h3>
-                <div>
-                  Orientation-aware diffusion models that recover 3T-like detail
-                  from routine 1.5T fetal MRI.
-                  <nav
-                    class="method-links"
-                    aria-label="Fetal MRI Super-Resolution resources"
-                  >
-                    <a
-                      href="https://proceedings.mlr.press/v315/zhong26a.html"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Paper
-                    </a>
-                  </nav>
-                </div>
-              </article>
-            </div>
-
-            <details class="more-content">
-              <summary>View two more methods</summary>
-              <div class="methods-list">
-              <article class="method-item">
-                <p>Quantitative placental MRI · MICCAI 2025</p>
-                <h3>Placental MRI Phenotyping</h3>
-                <div>
-                  Contrast-invariant self-supervised segmentation for
-                  reproducible measurement across imaging conditions.
-                  <nav
-                    class="method-links"
-                    aria-label="Placental MRI Phenotyping resources"
-                  >
-                    <a
-                      href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12498333/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Paper
-                    </a>
-                  </nav>
-                </div>
-              </article>
-              <article class="method-item">
-                <p>Longitudinal MRI synthesis · IEEE TMI 2022</p>
-                <h3>PTNet3D</h3>
-                <div>
-                  A 3D transformer-based framework for high-resolution
-                  longitudinal infant brain MRI synthesis.
-                  <nav class="method-links" aria-label="PTNet3D resources">
-                    <a
-                      href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9529847/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Paper
-                    </a>
-                    <a
-                      href="https://github.com/XuzheZ/PTNet3D"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Code
-                    </a>
-                  </nav>
-                </div>
-              </article>
-              </div>
-            </details>
-          </div>
-        </section>
-
-        <section class="section publications-section" id="publications">
-          <div class="site-frame">
-            <header class="section-heading">
-              <h2>Selected publications</h2>
-              <p>
-                Recent and representative work across medical imaging, machine
-                learning, neurodevelopment, and mental health.
-              </p>
-            </header>
-
-            <div class="publication-list">
-              <article class="publication-item">
-                <span class="publication-marker">
-                  <b aria-hidden="true">[01]</b>
-                  <time datetime="2026">2026</time>
-                </span>
-                <div>
-                  <h3>
-                    <a
-                      href="https://proceedings.mlr.press/v315/liu26b.html"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      NeuroLangSeg: Language-Guided Subcortical Segmentation
-                      with Pseudo-Supervision and Anatomical–Linguistic
-                      Validation
-                    </a>
-                  </h3>
-                  <p>Liu, R., Liu, J., Zhang, X., Huang, C., &amp; Wang, Y.</p>
-                  <em>Medical Imaging with Deep Learning</em>
-                </div>
-              </article>
-              <article class="publication-item">
-                <span class="publication-marker">
-                  <b aria-hidden="true">[02]</b>
-                  <time datetime="2026">2026</time>
-                </span>
-                <div>
-                  <h3>
-                    <a
-                      href="https://proceedings.mlr.press/v315/zhong26a.html"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Orientation-Aware Diffusion Super-Resolution for 3T-Like
-                      Fetal MRI from Routine 1.5T Scans
-                    </a>
-                  </h3>
-                  <p>
-                    Zhong, X., Liu, R., Lin, G., Huang, C., Goldman-Yassen, A.,
-                    Mehollin-Ray, A., &amp; Wang, Y.
-                  </p>
-                  <em>Medical Imaging with Deep Learning</em>
-                </div>
-              </article>
-              <article class="publication-item">
-                <span class="publication-marker">
-                  <b aria-hidden="true">[03]</b>
-                  <time datetime="2026">2026</time>
-                </span>
-                <div>
-                  <h3>
-                    <a
-                      href="https://openreview.net/forum?id=YWDQpIgWFK"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      A Two-Stage Multi-Modal MRI Framework for Lifespan Brain
-                      Age Prediction
-                    </a>
-                  </h3>
-                  <p>Zhang, D., et al., &amp; Wang, Y.</p>
-                  <em>Medical Imaging with Deep Learning</em>
-                </div>
-              </article>
-              <article class="publication-item">
-                <span class="publication-marker">
-                  <b aria-hidden="true">[04]</b>
-                  <time datetime="2025">2025</time>
-                </span>
-                <div>
-                  <h3>
-                    <a
-                      href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12498333/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Contrast-Invariant Self-supervised Segmentation for
-                      Quantitative Placental MRI
-                    </a>
-                  </h3>
-                  <p>
-                    Zhong, X., Liu, R., Nichols, E. S., Zhang, X., Laine, A. F.,
-                    Duerden, E. G., &amp; Wang, Y.
-                  </p>
-                  <em>MICCAI PIPPI</em>
-                </div>
-              </article>
-              <article class="publication-item">
-                <span class="publication-marker">
-                  <b aria-hidden="true">[05]</b>
-                  <time datetime="2025">2025</time>
-                </span>
-                <div>
-                  <h3>
-                    <a
-                      href="https://doi.org/10.1038/s41591-025-03560-7"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Prediction of Mental Health Risk in Adolescents
-                    </a>
-                  </h3>
-                  <p>
-                    Hill, E. D., Kashyap, P., Raffanello, E., Wang, Y., Moffitt,
-                    T. E., Caspi, A., et al.
-                  </p>
-                  <em>Nature Medicine</em>
-                </div>
-              </article>
-            </div>
-
-            <details class="more-content publication-more">
-              <summary>View three more selected publications</summary>
-              <div class="publication-list">
-              <article class="publication-item">
-                <span class="publication-marker">
-                  <b aria-hidden="true">[06]</b>
-                  <time datetime="2024">2024</time>
-                </span>
-                <div>
-                  <h3>
-                    <a
-                      href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_MAPSeg_Unified_Unsupervised_Domain_Adaptation_for_Heterogeneous_Medical_Image_Segmentation_CVPR_2024_paper.html"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      MAPSeg: Unified Unsupervised Domain Adaptation for
-                      Heterogeneous Medical Image Segmentation
-                    </a>
-                  </h3>
-                  <p>
-                    Zhang, X., Wu, Y., Angelini, E., Li, A., Guo, J., Rasmussen,
-                    J. M., O’Connor, T. G., Wang, Y., et al.
-                  </p>
-                  <em>
-                    IEEE/CVF Conference on Computer Vision and Pattern
-                    Recognition
-                  </em>
-                </div>
-              </article>
-              <article class="publication-item">
-                <span class="publication-marker">
-                  <b aria-hidden="true">[07]</b>
-                  <time datetime="2024">2024</time>
-                </span>
-                <div>
-                  <h3>
-                    <a
-                      href="https://doi.org/10.1002/hbm.26582"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Segmenting Hypothalamic Subunits in Human Newborn Magnetic
-                      Resonance Imaging Data
-                    </a>
-                  </h3>
-                  <p>
-                    Rasmussen, J. M., Wang, Y., Graham, A. M., Fair, D. A.,
-                    Posner, J., O’Connor, T. G., et al.
-                  </p>
-                  <em>Human Brain Mapping</em>
-                </div>
-              </article>
-              <article class="publication-item">
-                <span class="publication-marker">
-                  <b aria-hidden="true">[08]</b>
-                  <time datetime="2019">2019</time>
-                </span>
-                <div>
-                  <h3>
-                    <a
-                      href="https://doi.org/10.1016/S2215-0366(19)30179-8"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      The Association Between Antidepressant Treatment and Brain
-                      Connectivity in Two Double-Blind, Placebo-Controlled
-                      Clinical Trials
-                    </a>
-                  </h3>
-                  <p>
-                    Wang, Y., Bernanke, J., Peterson, B. S., McGrath, P.,
-                    Stewart, J., Chen, Y., et al.
-                  </p>
-                  <em>The Lancet Psychiatry</em>
-                </div>
-              </article>
-              </div>
-            </details>
-
-            <a
-              class="profile-record-link"
-              href="https://dblp.org/pid/36/3235-49.html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View complete publication record →
-            </a>
-          </div>
-        </section>
-
-        <section class="section people-section" id="people">
-          <div class="site-frame">
-            <header class="section-heading">
-              <h2>People</h2>
-              <p>
-                We are a small interdisciplinary group working where
-                computation, imaging, and maternal–infant health meet. We train
-                researchers to develop rigorous methods grounded in biological
-                and clinical questions.
-              </p>
-            </header>
-
-            <article class="pi-profile">
-              <div>
-                <p class="profile-label">Principal Investigator</p>
-                <h3>
-                  <a href="/people/yun-wang/">Yun Wang, Ph.D.</a>
-                </h3>
-                <p class="pi-title">
-                  Tenure-track Assistant Professor of Biomedical Informatics
-                </p>
-                <p>
-                  Dr. Wang holds secondary appointments in Gynecology &amp;
-                  Obstetrics and Radiology &amp; Imaging Sciences at Emory
-                  University School of Medicine. Her research develops
-                  interpretable computational methods for maternal, placental,
-                  fetal, and infant health.
-                </p>
-                <a href="mailto:yun.wang2@emory.edu">
-                  yun.wang2@emory.edu
-                </a>
-                <a class="profile-detail-link" href="/people/yun-wang/">
-                  View full profile
-                </a>
-              </div>
-            </article>
-
-            <div class="member-list" aria-label="Lab members">
-              <article class="member-item">
-                <h3>Ruiying Liu, Ph.D.</h3>
-                <p>Postdoctoral Fellow</p>
-                <span>
-                  Segmentation, motion correction, and foundation models
-                </span>
-              </article>
-              <article class="member-item">
-                <h3>Xinliu Zhong</h3>
-                <p>Ph.D. Candidate · Emory University</p>
-                <span>Placental and fetal MRI</span>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section connect-section" id="connect">
-          <div class="site-frame">
-            <header class="section-heading">
-              <p class="section-kicker">Work with us</p>
-              <h2>Connect with the lab</h2>
-              <p>
-                We welcome thoughtful conversations across perinatal imaging,
-                maternal–infant health, biomedical informatics, and responsible
-                medical AI.
-              </p>
-            </header>
-            <div class="engagement-grid">
-              <article class="engagement-card">
-                <h3>Collaborate</h3>
-                <p>
-                  Researchers and clinical partners are invited to share a
-                  focused question, dataset, method, or translational idea.
-                </p>
-                <a
-                  class="text-arrow-link"
-                  href="mailto:yun.wang2@emory.edu?subject=Collaboration%20inquiry"
-                >
-                  Start a conversation <span aria-hidden="true">→</span>
-                </a>
-              </article>
-              <article class="engagement-card">
-                <h3>Train with us</h3>
-                <p>
-                  Prospective students and fellows may introduce their
-                  background and research interests. Specific opportunities
-                  depend on project needs and available funding.
-                </p>
-                <a
-                  class="text-arrow-link"
-                  href="mailto:yun.wang2@emory.edu?subject=Prospective%20trainee%20inquiry"
-                >
-                  Introduce yourself <span aria-hidden="true">→</span>
-                </a>
-              </article>
-              <article class="engagement-card engagement-card-accent">
-                <h3>Participate</h3>
-                <p>
-                  Both maternal–infant R01 studies are recruiting participants.
-                  Families can contact the study team for current details.
-                </p>
-                <a class="text-arrow-link" href="#participate">
-                  View recruiting studies <span aria-hidden="true">→</span>
-                </a>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section news-section" id="news">
-          <div class="site-frame">
-            <header class="section-heading compact-heading">
-              <h2>News archive</h2>
-            </header>
-            <div class="news-list">
-              <article class="news-item">
-                <time datetime="2026-06">June 2026</time>
-                <p>
-                  <a
-                    href="https://reporter.nih.gov/project-details/11342946"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    New NICHD R01 supports a longitudinal study of the maternal
-                    obesity–placenta–brain axis.
-                  </a>
-                </p>
-              </article>
-              <article class="news-item">
-                <time datetime="2026">2026</time>
-                <p>
-                  <a
-                    href="https://proceedings.mlr.press/v315/liu26b.html"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Three senior-author papers accepted at Medical Imaging with
-                    Deep Learning.
-                  </a>
-                </p>
-              </article>
-              <article class="news-item">
-                <time datetime="2025-09">September 2025</time>
-                <p>
-                  <a
-                    href="https://www.rarediseasesnetwork.org/consortia-directory"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Nurture Map Lab joins the NIH U54 ARISEN research network.
-                  </a>
-                </p>
-              </article>
-              <article class="news-item">
-                <time datetime="2025-03">March 2025</time>
-                <p>
-                  <a
-                    href="https://www.gpb.org/news/2025/03/20/emory-researcher-uses-artificial-intelligence-predict-youth-mental-health-risks"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Mental health prediction study published in Nature Medicine
-                    and featured by Georgia Public Broadcasting.
-                  </a>
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="contact" id="contact">
-          <div class="site-frame contact-inner">
-            <div>
-              <h2>Contact</h2>
-              <p>
-                Research, collaboration, training, and study participation
-                inquiries are welcome.
-              </p>
-            </div>
-            <div class="contact-details">
-              <a href="mailto:yun.wang2@emory.edu">
-                yun.wang2@emory.edu
-              </a>
-              <p>Emory University School of Medicine · Atlanta, Georgia</p>
-              <nav aria-label="External profiles">
-                <a
-                  href="https://med.emory.edu/directory/profile/?u=YWAN303"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Emory profile
-                </a>
-                <a
-                  href="https://orcid.org/0000-0003-2426-2876"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ORCID
-                </a>
-                <a
-                  href="https://github.com/wangyunai"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/yun-wang-8308713b/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </nav>
-            </div>
-          </div>
-        </section>
-      </main>
+<section id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-top">
+    <div class="hero-title">
+      <p class="kicker">Maternal–infant imaging · AI · Neurodevelopment</p>
+      <h1 id="hero-title">Mapping how a mother’s health shapes the developing brain.</h1>
     </div>
-
-    <footer class="site-footer">
-      <div class="site-frame">
-        <span>© 2026 Nurture Map Lab</span>
-        <span>Maternal–Infant Imaging, AI &amp; Neurodevelopment</span>
+    <div class="hero-side">
+      <p>We build AI and quantitative MRI methods that follow one connected pathway, from maternal health through the placenta and fetal circulation to infant brain development and early behavior.</p>
+      <div class="actions">
+        <a class="btn" href="#research">Explore our research</a>
+        <a class="text-link" href="mailto:{{ lab.email }}?subject=Collaboration%20inquiry">Collaborate with us</a>
       </div>
-    </footer>
-    <script src="/js/site.js?v=20260930-interactive" defer></script>
-  </body>
-</html>
+    </div>
+  </div>
+
+  <div class="wrap map" id="map">
+    <div class="map-head">
+      <h2>The Nurture Map <span>— one developmental story in five stages</span></h2>
+      <p class="epigraph"><span class="zh" lang="zh-Hans">生生之谓易</span><span class="en">Life is a continuous process of becoming.</span></p>
+    </div>
+    <ol class="stages" data-play>
+      <li class="stage">
+        <div class="stage-art"><span class="sprite sprite-pregnancy" role="img" aria-label="Watercolor of a pregnant mother"></span></div>
+        <div class="node"></div>
+        <p class="stage-num">01</p>
+        <h3>Maternal context</h3>
+        <p class="stage-text">Metabolic, inflammatory, environmental, and psychosocial health in pregnancy.</p>
+      </li>
+      <li class="stage">
+        <div class="stage-art"><img class="organ" src="/images/research-placenta.png" alt="Illustration of the placenta and its vessels" width="159" height="128" /></div>
+        <div class="node"></div>
+        <p class="stage-num">02</p>
+        <h3>Placenta</h3>
+        <p class="stage-text">Structure, perfusion, oxygenation, exchange, and molecular signaling.</p>
+      </li>
+      <li class="stage">
+        <div class="stage-art"><img class="organ" src="/images/research-circulation.png" alt="Illustration of the fetal heart and circulation" width="101" height="128" /></div>
+        <div class="node"></div>
+        <p class="stage-num">03</p>
+        <h3>Fetal circulation</h3>
+        <p class="stage-text">Blood flow, cardiovascular adaptation, and oxygen delivery.</p>
+      </li>
+      <li class="stage">
+        <div class="stage-art"><img class="organ" src="/images/research-brain.png" alt="Illustration of the developing brain" width="157" height="128" /></div>
+        <div class="node"></div>
+        <p class="stage-num">04</p>
+        <h3>Developing brain</h3>
+        <p class="stage-text">Structure, tissue maturation, connectivity, and regional growth.</p>
+      </li>
+      <li class="stage">
+        <div class="stage-art"><span class="sprite sprite-child" role="img" aria-label="Watercolor of a young child running"></span></div>
+        <div class="node"></div>
+        <p class="stage-num">05</p>
+        <h3>Early neurobehavior</h3>
+        <p class="stage-text">Regulation, attention, and social communication in infancy.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="band" aria-label="The lab at a glance">
+  <div class="wrap stats">
+    {%- for stat in lab.stats %}
+    <div>
+      <p class="stat-value">{{ stat.value }}</p>
+      <p class="stat-label">{{ stat.label }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="wrap section" id="research" aria-labelledby="research-title">
+  <div class="section-head">
+    <div>
+      <p class="kicker">Research</p>
+      <h2 class="display" id="research-title">Three programs, one pathway.</h2>
+    </div>
+    <p>We combine imaging, machine learning, multi-omics, and longitudinal behavior to build measurable phenotypes and find modifiable pathways for earlier intervention.</p>
+  </div>
+  <div class="programs">
+    <article class="program">
+      <p class="kicker">01 · Methods</p>
+      <h3>AI for perinatal imaging phenotypes</h3>
+      <p>Learning methods for fetal, placental, newborn, and infant MRI that handle motion, changing anatomy, scanner differences, and limited labels.</p>
+      <p class="question">How can we recover reliable phenotypes from moving, rapidly changing anatomy?</p>
+    </article>
+    <article class="program">
+      <p class="kicker">02 · Mechanisms</p>
+      <h3>Placental and fetal-circulatory pathways</h3>
+      <p>How maternal metabolism, inflammation, stress, medications, and environment shape placental function, fetal hemodynamics, and oxygen delivery.</p>
+      <p class="question">Where along the maternal–placental–fetal pathway does risk emerge?</p>
+    </article>
+    <article class="program">
+      <p class="kicker">03 · Outcomes</p>
+      <h3>From perinatal phenotypes to neurobehavioral risk</h3>
+      <p>Linking imaging phenotypes with regulation, attention, social communication, NICU course, and early psychopathology risk.</p>
+      <p class="question">Which perinatal phenotypes signal later risk or resilience?</p>
+    </article>
+  </div>
+
+  <div class="support">
+    <h3 class="subhead">Active NIH support</h3>
+    <ul class="rows">
+      {%- for grant in site.data.grants %}
+      <li class="grant">
+        <span class="grant-num">{{ grant.number }}</span>
+        <a href="{{ grant.url }}" target="_blank" rel="noreferrer">{{ grant.title }}</a>
+        <span class="grant-role">{{ grant.role }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="families" id="families" aria-labelledby="families-title">
+  <div class="wrap">
+    <span class="families-art sprite sprite-mother-infant" role="img" aria-label="Watercolor of a mother holding her baby" data-play></span>
+    <div class="families-copy">
+      <p class="kicker">For families · Now recruiting in Atlanta</p>
+      <h2 id="families-title">Join the MOON Study</h2>
+      <p class="lead">We follow families from pregnancy through baby’s first year to learn how a mother’s health, the placenta, and early brain development are connected.</p>
+      {%- if lab.moon.show_visit_details %}
+      <ol class="involved">
+        <li><p class="when">During pregnancy</p><p class="what">Two MRI visits, at 24–28 and 32–36 weeks</p></li>
+        <li><p class="when">After birth</p><p class="what">A baby MRI visit at 1–2 months</p></li>
+        <li><p class="when">First year</p><p class="what">Developmental check-ins at 6, 9, and 12 months</p></li>
+      </ol>
+      {%- endif %}
+      <div class="actions">
+        <a class="btn btn-accent" href="/moon/">Learn about joining</a>
+        {%- if lab.moon.phone != "" %}
+        <span>or call <strong>{{ lab.moon.phone }}</strong></span>
+        {%- endif %}
+      </div>
+      <p class="fine">Contacting us doesn’t enroll you, and taking part is always voluntary.</p>
+      <p class="also">Also recruiting, in Durham, NC: <a href="https://psychiatry.duke.edu/duke-momma-study" target="_blank" rel="noreferrer">the MOMMA Study at Duke University</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" id="people" aria-labelledby="people-title">
+  <div class="section-head">
+    <div>
+      <p class="kicker">People</p>
+      <h2 class="display" id="people-title">Trainees lead our methods work.</h2>
+    </div>
+    <p>An interdisciplinary team spanning machine learning, MRI, and maternal–infant health, working with clinical partners across Atlanta and beyond.</p>
+  </div>
+
+  {%- assign pi = people.pi %}
+  <article class="pi">
+    <div class="avatar avatar-lg" aria-hidden="true">{% if pi.photo != "" %}<img src="{{ pi.photo }}" alt="" width="132" height="132" />{% else %}{{ pi.initials }}{% endif %}</div>
+    <div class="pi-copy">
+      <p class="subhead" style="margin: 0;">Principal investigator</p>
+      <h3><a href="{{ pi.profile }}">{{ pi.name }}</a></h3>
+      <p class="pi-title">{{ pi.title }}, {{ lab.institution }}</p>
+      <p class="pi-meta">{{ pi.appointments }}{% for c in pi.credentials %} · {{ c }}{% endfor %}</p>
+      <div class="inline-links">
+        <a href="{{ pi.profile }}">Full profile</a>
+        <a href="mailto:{{ lab.email }}">{{ lab.email }}</a>
+      </div>
+    </div>
+  </article>
+
+  <div class="members">
+    {%- for m in people.members %}
+    <article class="member">
+      <div class="avatar" aria-hidden="true">{% if m.photo != "" %}<img src="{{ m.photo }}" alt="" width="64" height="64" />{% else %}{{ m.initials }}{% endif %}</div>
+      <h3>{{ m.name }}</h3>
+      <p class="role">{{ m.role }}</p>
+      <p class="focus">{{ m.focus }}</p>
+      {%- for h in m.highlights %}
+      <p class="hl"><span>{{ h.label }}</span> · {% if h.url %}<a href="{{ h.url }}" target="_blank" rel="noreferrer">{{ h.text }}</a>{% else %}{{ h.text }}{% endif %}</p>
+      {%- endfor %}
+    </article>
+    {%- endfor %}
+  </div>
+
+  <div class="lists">
+    {%- if people.alumni.size > 0 %}
+    <div>
+      <h3 class="subhead">Alumni</h3>
+      <ul class="rows pair-list">
+        {%- for a in people.alumni %}
+        <li>{{ a.name }}<span>{{ a.was }} → now {{ a.now }}</span></li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endif %}
+    <div>
+      <h3 class="subhead">Clinical &amp; research partners</h3>
+      <ul class="rows pair-list">
+        {%- for p in people.partners %}
+        <li>{{ p.name }}<span>{{ p.note }}</span></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" id="methods" aria-labelledby="methods-title">
+  <p class="kicker">Methods &amp; software</p>
+  <h2 class="display" id="methods-title" style="margin-top: 12px; max-width: 760px;">Tools built for moving, growing anatomy.</h2>
+  <div class="methods">
+    {%- for m in site.data.methods %}
+    <article class="method">
+      <p class="tag">{{ m.tag }}</p>
+      <h3>{{ m.name }}</h3>
+      <p>{{ m.text }}</p>
+      <div class="method-links">
+        {%- for l in m.links %}
+        <a href="{{ l.url }}" target="_blank" rel="noreferrer">{{ l.label }} <span aria-hidden="true">↗</span></a>
+        {%- endfor %}
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="wrap section" id="publications" aria-labelledby="pubs-title">
+  <div class="section-head">
+    <div>
+      <p class="kicker">Publications</p>
+      <h2 class="display" id="pubs-title">Selected work</h2>
+    </div>
+    <p style="flex: 0 1 auto;">Lab members in <strong>bold</strong></p>
+  </div>
+  <ol class="rows pubs">
+    {%- for pub in site.data.publications limit: 6 %}
+    <li class="pub">
+      <span class="pub-year">{{ pub.year }}</span>
+      <div class="pub-body">
+        <a class="pub-title" href="{{ pub.url }}" target="_blank" rel="noreferrer">{{ pub.title }}</a>
+        <p class="pub-meta">{% include authors.html authors=pub.authors %} · <em>{{ pub.venue }}</em></p>
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+  {%- if lab.links.scholar != "" %}
+  <p class="more-link"><a href="{{ lab.links.scholar }}" target="_blank" rel="noreferrer">Full list on Google Scholar →</a></p>
+  {%- else %}
+  <p class="more-link"><a href="{{ lab.links.orcid }}" target="_blank" rel="noreferrer">Full list on ORCID →</a></p>
+  {%- endif %}
+</section>
+
+<section class="wrap section news" id="news" aria-labelledby="news-title">
+  <div class="news-head">
+    <p class="kicker">News</p>
+    <h2 class="display" id="news-title">Recently</h2>
+  </div>
+  <ul class="rows">
+    {%- for item in site.data.news limit: 5 %}
+    <li class="news-item">
+      <span class="news-date">{{ item.date }} · {{ item.category }}</span>
+      <p class="news-text">{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noreferrer">{{ item.text }}</a>{% else %}{{ item.text }}{% endif %}</p>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>

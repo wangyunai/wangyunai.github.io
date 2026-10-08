@@ -1,0 +1,7 @@
+{%- comment -%}Bolds lab members (people.yml → lab_authors) in an author string.{%- endcomment -%}
+{%- assign authors = include.authors | escape -%}
+{%- for name in site.data.people.lab_authors -%}
+{%- capture bolded %}<strong>{{ name }}</strong>{% endcapture -%}
+{%- assign authors = authors | replace: name, bolded -%}
+{%- endfor -%}
+{{- authors -}}

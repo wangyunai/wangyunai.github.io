@@ -1,0 +1,23 @@
+# Site settings. GitHub Pages builds this site automatically on every push.
+title: Nurture Map Lab
+tagline: Maternal–infant imaging, AI & neurodevelopment
+description: >-
+  Yun Wang, PhD, leads an NIH-funded computational maternal–fetal imaging
+  program at Emory University, developing AI and quantitative MRI methods from
+  maternal health through placental and fetal physiology to early brain
+  development.
+url: https://wangyunai.github.io
+baseurl: ""
+lang: en
+og_image: /images/og-nurture-map-v1.png
+google_analytics: G-0H82M97S0K
+google_site_verification: yHnQfGtxYITrz_1wQaYFI2cyAWuikGDwt81frJaCdhA
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

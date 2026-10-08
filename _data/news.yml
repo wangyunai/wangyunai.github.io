@@ -1,0 +1,25 @@
+# Newest first. The homepage shows the first five. "url" is optional.
+
+- date: 2026
+  category: Award
+  text: Postdoc Ruiying Liu receives the ASPNR Erin & Darren Schwartz Research Scientist Travel Grant.
+
+- date: Jun 2026
+  category: Grant
+  text: New NICHD R01 launches the MOON Study of the maternal obesity–placenta–brain axis.
+  url: https://reporter.nih.gov/project-details/11342946
+
+- date: 2026
+  category: Papers
+  text: Three lab papers accepted at Medical Imaging with Deep Learning (MIDL).
+  url: https://proceedings.mlr.press/v315/
+
+- date: Sep 2025
+  category: Network
+  text: The lab joins the NIH U54 ARISEN research network.
+  url: https://arisen.rarediseasesnetwork.org/
+
+- date: Mar 2025
+  category: Media
+  text: Mental health prediction study in Nature Medicine, featured by Georgia Public Broadcasting.
+  url: https://www.gpb.org/news/2025/03/20/emory-researcher-uses-artificial-intelligence-predict-youth-mental-health-risks

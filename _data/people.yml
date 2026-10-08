@@ -1,0 +1,60 @@
+# People shown on the homepage. Leave photo empty ("") to show initials.
+
+pi:
+  name: Yun Wang, Ph.D.
+  initials: YW
+  photo: /images/yun-wang-illustrated.png
+  title: Tenure-track Assistant Professor of Biomedical Informatics
+  appointments: Secondary appointments in Gynecology & Obstetrics and Radiology & Imaging Sciences
+  credentials:
+    - NIH K99/R00 Pathway to Independence awardee
+    - Standing member, NIH NICHD study section
+  profile: /people/yun-wang/
+
+# Current lab members. Highlights: short lines; "url" is optional.
+members:
+  - name: Ruiying Liu, Ph.D.
+    initials: RL
+    photo: ""
+    role: Postdoctoral Fellow
+    focus: Segmentation, motion correction, foundation models
+    highlights:
+      - label: Award
+        text: ASPNR Erin & Darren Schwartz Research Scientist Travel Grant, 2026
+      - label: First author
+        text: NeuroLangSeg, MIDL 2026
+        url: https://proceedings.mlr.press/v315/liu26b.html
+  - name: Xinliu Zhong
+    initials: XZ
+    photo: ""
+    role: Ph.D. Candidate, Emory University
+    focus: Placental and fetal MRI
+    highlights:
+      - label: First author
+        text: Fetal MRI super-resolution, MIDL 2026
+        url: https://proceedings.mlr.press/v315/zhong26a.html
+      - label: First author
+        text: Placental MRI segmentation, MICCAI PIPPI 2025
+        url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12498333/
+
+# Former lab members. The Alumni list appears once this has entries, e.g.:
+#   - name: Jane Doe
+#     was: Ph.D. student
+#     now: Machine learning scientist, Company
+alumni: []
+
+partners:
+  - name: Children’s Healthcare of Atlanta
+    note: Pediatric radiology
+  - name: Duke University
+    note: MOMMA Study
+  - name: Western University
+    note: Placental MRI
+  - name: NIH ARISEN Network
+    note: U54 research network
+
+# Names exactly as they appear in author lists; these are shown in bold.
+lab_authors:
+  - Wang, Y.
+  - Liu, R.
+  - Zhong, X.
